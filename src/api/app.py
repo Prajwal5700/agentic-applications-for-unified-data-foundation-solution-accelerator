@@ -8,6 +8,7 @@ and cleanup.
 
 
 from contextlib import asynccontextmanager
+from logging import config
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -73,6 +74,24 @@ def build_app() -> FastAPI:
     fastapi_app.include_router(chat_router, prefix="/api", tags=["chat"])
     fastapi_app.include_router(history_router, prefix="/history", tags=["history"])
     fastapi_app.include_router(history_sql_router, prefix="/historyfab", tags=["historyfab"])
+
+    @fastapi_app.get("/config")
+    async def get_config():
+        """Configuration endpoint for reading environment variables from Azure App Service"""
+        config = {
+            "API_URL": os.getenv("REACT_APP_API_BASE_URL", os.getenv("API_URL", "http://127.0.0.1:8000")),
+            "CHAT_LANDING_TEXT": os.getenv("REACT_APP_CHAT_LANDING_TEXT", "You can ask questions around sales, products and orders."),
+                # "REACT_APP_MSAL_AUTH_CLIENTID": os.getenv("REACT_APP_MSAL_AUTH_CLIENTID", ""),
+                # "REACT_APP_MSAL_AUTH_AUTHORITY": os.getenv("REACT_APP_MSAL_AUTH_AUTHORITY", ""),
+                # "REACT_APP_MSAL_REDIRECT_URL": os.getenv("REACT_APP_MSAL_REDIRECT_URL", ""),
+                # "REACT_APP_MSAL_POST_REDIRECT_URL": os.getenv("REACT_APP_MSAL_POST_REDIRECT_URL", ""),
+                # "REACT_APP_WEB_SCOPE": os.getenv("REACT_APP_WEB_SCOPE", ""),
+                # "REACT_APP_API_SCOPE": os.getenv("REACT_APP_API_SCOPE", ""),
+                # "ENABLE_AUTH": os.getenv("ENABLE_AUTH", "false"),
+                "AZURE_AI_AGENT_ENDPOINT": os.getenv("AZURE_AI_AGENT_ENDPOINT", ""),
+                "AGENT_ID_ORCHESTRATOR": os.getenv("AGENT_ID_ORCHESTRATOR", ""),
+            }
+        return config
 
     @fastapi_app.get("/health")
     async def health_check():

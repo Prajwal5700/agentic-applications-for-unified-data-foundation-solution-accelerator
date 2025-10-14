@@ -23,6 +23,7 @@ import { ChatMessage } from "./types/AppTypes";
 import { AppLogo } from "./components/Svg/Svg";
 import CustomSpinner from "./components/CustomSpinner/CustomSpinner";
 import CitationPanel from "./components/CitationPanel/CitationPanel";
+import { fetchConfigFromBackend } from "./config";
 const panels = {
   CHAT: "CHAT",
   CHATHISTORY: "CHATHISTORY",
@@ -58,7 +59,23 @@ const Dashboard: React.FC = () => {
   const OFFSET_INCREMENT = 25;
   const [hasMoreRecords, setHasMoreRecords] = useState<boolean>(true);
   const [name, setName] = useState<string>("");
+  const [configLoaded, setConfigLoaded] = useState<boolean>(false);
 
+  // Load configuration from backend on app startup
+  useEffect(() => {
+    const initializeConfig = async () => {
+      try {
+        await fetchConfigFromBackend();
+        setConfigLoaded(true);
+      } catch (error) {
+        console.error('Failed to load backend configuration:', error);
+        // Still mark as loaded to continue with fallback config
+        setConfigLoaded(true);
+      }
+    };
+    
+    initializeConfig();
+  }, []);
 
   const getUserInfoList = async () => {
     const userInfoList = await getUserInfo();
@@ -261,6 +278,18 @@ const Dashboard: React.FC = () => {
       setClearingError(false);
     }, 1000);
   };
+
+  // // Show loading spinner while configuration is being fetched
+  // if (!configLoaded) {
+  //   return (
+  //     <FluentProvider
+  //       theme={webLightTheme}
+  //       style={{ height: "100%", backgroundColor: "#F5F5F5" }}
+  //     >
+  //       <CustomSpinner loading={true} label="Loading configuration..." />
+  //     </FluentProvider>
+  //   );
+  // }
 
   return (
     <FluentProvider
