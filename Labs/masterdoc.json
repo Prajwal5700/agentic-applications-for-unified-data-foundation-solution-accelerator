@@ -1,0 +1,19 @@
+[ {
+  "Name": "Chat with your data [Fabric]",
+  "Language": "English",
+  "Files": [
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5700/agentic-applications-for-unified-data-foundation-solution-accelerator/refs/heads/main/Labs/Gettingstarted.md",
+        "Order": 1
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5700/agentic-applications-for-unified-data-foundation-solution-accelerator/refs/heads/main/Labs/Lab1.md",
+        "Order": 2
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5700/agentic-applications-for-unified-data-foundation-solution-accelerator/refs/heads/main/Labs/CopilotStudioDeployment.md.md",
+        "Order": 3
+     }
+  ]
+} 
+]
