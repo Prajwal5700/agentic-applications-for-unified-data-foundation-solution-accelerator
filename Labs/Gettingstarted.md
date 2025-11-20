@@ -1,6 +1,6 @@
 # Chat with your data [Fabric] Workshop
 
-## Overall Duration – 4 Hours 
+## Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -114,5 +114,6 @@ Learner Support Contacts:
 Click **Next** from the bottom right corner to embark on your Lab journey!
 
 ![](../Images/nextpage.png)
+
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
