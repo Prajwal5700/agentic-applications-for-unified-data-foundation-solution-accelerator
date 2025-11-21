@@ -94,9 +94,9 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 You can run this solution using GitHub Codespaces. The button will open a web-based VS Code instance in your browser:
 
-1. Open the solution accelerator (this may take several minutes):
+1. Open the solution accelerator by copying the below link into edge browser(this may take several minutes):
 
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator)
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/CloudLabsAI-Azure/agentic-applications-for-unified-data-foundation-solution-accelerator)
 
 1. Accept the default values on the create Codespaces page.
 1. Open a terminal window if it is not already open.
