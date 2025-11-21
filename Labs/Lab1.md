@@ -94,23 +94,45 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 You can run this solution using GitHub Codespaces. The button will open a web-based VS Code instance in your browser:
 
-1. Open the solution accelerator by copying the below link into edge browser(this may take several minutes):
+1. Open the solution accelerator by copying the below link into edge browser:
 
     [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/CloudLabsAI-Azure/agentic-applications-for-unified-data-foundation-solution-accelerator)
 
-1. Accept the default values on the create Codespaces page.
-1. Open a terminal window if it is not already open.
-1. Continue with the [deploying steps](#deploying-with-azd).
+1. Accept the default values on the create Codespaces page, choose **Create codespace**.
+1. It would take 2-5 minutes for codespace to get ready.
 
 ### Deploying with AZD
 
-Once you've opened the project in [Codespaces](#github-codespaces), [Dev Containers](#vs-code-dev-containers), or [locally](#local-environment), you can deploy it to Azure by following these steps:
+Once you've opened the project in [Codespaces](#github-codespaces) you can deploy it to Azure by following these steps:
 
 1. Login to Azure:
 
     ```shell
     azd auth login
     ```
+1. You will see Start by copying the next code: xxxxx, copy the code for you then select **Enter**.
+
+1. A new window **Enter code to allow access** will open in the browser, provide the code copied in the previous step and choose **Next**.
+
+1. Select the ODL user used to login into azure. If not logged into azure yet, use the following credentials to login in:
+
+2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+     ![](../Images/signin.png)
+
+3. Next, provide your Temporary Access Pass:
+
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
+
+     ![](../Images/TAP.png)
+
+1. You will see the pop up window, **Are you trying to sign in to Microsoft Azure CLI?**, choose **Continue**.
+
+1. You will see the pop up window confirming the sign in as **You have signed in to the Microsoft Azure Cross-platform Command Line Interface application on your device.**
+
+1. Navigate to the browser where codespace is created, you will notice that you are logged in as Azure user.
 
 1. Provision and deploy all the resources:
 
@@ -118,20 +140,28 @@ Once you've opened the project in [Codespaces](#github-codespaces), [Dev Contain
     azd up
     ```
 
-1. Provide an `azd` environment name (e.g., "daapp").
-1. Select a subscription from your Azure account and choose a location that has quota for all the resources.
-1. Choose the programming language for the backend API:
+1. Provide an `azd` environment name as **fabricapp**.
+1. You will see the subscription available for you, **type 1** choose **Enter** to select the default subscription.
+1. Now, you will see the list of locations, use the up/down arrow button to navigate to **Australia East** as location, press **Enter** to select it.
 
-   - **Python**
-   - **.NET (dotnet)**
+1. You will see two options to choose the programming language for the backend API, as **Enter a value for the 'backendRuntimeStack' infrastructure parameter:**, choose **dotnet** and press **Enter**.
 
-1. This deployment will take *7-10 minutes* to provision the resources in your account and set up the solution with sample data.
+   - **python**
+   - **dotnet(.NET )**
+
+1. Now, you will see the option to choose the Resource group or create it, keep the curson at **1. Create a new resource group** and press **Enter**.
+
+1. Use the up/down arrow button to navigate to **Australia East** as location, press **Enter** to select it.
+
+1. You will see the prompt **Enter a name for the new resource group**, provide **rg-fabricapp** as suggested and press **Enter**
+
+1. This deployment can take upto *7-10 minutes* to provision the resources in your account and set up the solution with sample data.
    
    If you encounter an error or timeout during deployment, changing the location may help, as there could be availability constraints for the resources.
 
 1. Once the deployment has completed successfully, copy the 2 bash commands from the terminal (ex. 
 `bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh` and
-`bash ./infra/scripts/fabric_scripts/run_fabric_items_scripts.sh <fabric-workspaceId>`) for later use.
+`bash ./infra/scripts/fabric_sripts/run_fabric_items_scripts.sh <fabric-workspaceId>`) for later use.
 
 > **Note**: if you are running this deployment in GitHub Codespaces or VS Code Dev Container skip to step 7. 
 
