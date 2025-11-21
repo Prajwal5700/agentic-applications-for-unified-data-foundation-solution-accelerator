@@ -163,34 +163,12 @@ Once you've opened the project in [Codespaces](#github-codespaces) you can deplo
 `bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh` and
 `bash ./infra/scripts/fabric_sripts/run_fabric_items_scripts.sh <fabric-workspaceId>`) for later use.
 
-> **Note**: if you are running this deployment in GitHub Codespaces or VS Code Dev Container skip to step 7. 
-
-1. Create and activate a virtual environment 
-  
-    ```shell
-    python -m venv .venv
-    ```
-
-    ```shell
-    .venv\Scripts\activate
-    ```
-
-1. Login to Azure
-
-    ```shell
-    az login
-    ```
+    > **Note**: if you are running this deployment in GitHub Codespaces or VS Code Dev Container skip to step 7. 
 
 1. Run the bash script from the output of the azd deployment. The script will look like the following:
 
     ```Shell
     bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh
-    ```
-
-1. If you don't have azd env then you need to pass parameters along with the command. Then the command will look like the following:
-
-    ```Shell
-    bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh <project-endpoint> <solution-name> <gpt-model-name> <ai-foundry-resource-id> <api-app-name> <resource-group>
     ```
 
 1. Run the bash script from the output of the azd deployment. Replace the <fabric-workspaceId> with your Fabric workspace Id created in the previous steps. The script will look like the following:
@@ -199,26 +177,49 @@ Once you've opened the project in [Codespaces](#github-codespaces) you can deplo
     bash ./infra/scripts/fabric_scripts/run_fabric_items_scripts.sh <fabric-workspaceId>
     ```
 
-1. If you don't have azd env then you need to pass parameters along with the command. Then the command will look like the following:
-
-    ```Shell
-    bash ./infra/scripts/fabric_scripts/run_fabric_items_scripts.sh <fabric-workspaceId> <solutionname> <ai-foundry-name> <backend-api-mid-principal> <backend-api-mid-client> <api-app-name> <resourcegroup>
-    ```
-
 1. Once the script has run successfully, go to the deployed resource group, find the App Service, and get the app URL from `Default domain`.
 
-1. If you are done trying out the application, you can delete the resources by running `azd down`.
+# Set Up Authentication in Azure App Service
 
+This document provides step-by-step instructions to configure Azure App Registrations for a front-end application.
 
-## Post Deployment Steps
+## Prerequisites
 
-1. **Add App Authentication**
-   
-    Follow steps in [App Authentication](./AppAuthentication.md) to configure authentication in app service. Note: Authentication changes can take up to 10 minutes 
+- Access to **Microsoft Entra ID**
+- Necessary permissions to create and manage **App Registrations**
+  
+## Step 1: Add Authentication in Azure App Service configuration
 
-1. **Deleting Resources After a Failed Deployment**  
+1. Search for app services in azure portal and select it.
 
-     - Follow steps in [Delete Resource Group](./DeleteResourceGroup.md) if your deployment fails and/or you need to clean up the resources.
+1. You will see two app services in running state. Select the app service without **cs** in the name of it.
+
+1. Click on `Authentication` from left menu under Settings.
+
+    ![Authentication](Images/AppAuthentication.png)
+
+2. Click on `Add identity provider` to see a list of identity providers.
+
+    ![Authentication Identity](Images/AppAuthenticationIdentity.png)
+
+3. Click on `Identity Provider` dropdown to see a list of identity providers. Select the first option `Microsoft` from the drop-down list
+
+     ![Add Provider](Images/AppAuthIdentityProvider.png)
+
+4. Provide the name of App registration as  **fabric-app**. In `client secret expiration` under **App registration** choose **Recommended 180 days**.
+
+    ![Add Provider](Images/AppAuthIdentityProviderAdd.png)
+
+5. Accept the default values and click on `Add` button to go back to the previous page with the identity provider added.
+
+    ![Add Provider](Images/AppAuthIdentityProviderAdded.png)
+
+6. You have successfully added app authentication, and now required to log in to access the application.
+
+1. Navigate to Overview of the app service, select the default domain to open the web app in different tab of the browser.
+
+1. You will see Permission requested tab, choose Accept to login in using the same user used to logged into Azure.
+
 
 ## Sample Questions
 
@@ -229,6 +230,3 @@ To help you get started, here are some **Sample Questions** you can ask in the a
 - Show as a donut chart.
 
 These questions serve as a great starting point to explore insights from the data.
-
-## Create Fabric Data Agent and Publish to Teams
-1. Follow the step in [CopilotStudioDeployment](./CopilotStudioDeployment.md)
