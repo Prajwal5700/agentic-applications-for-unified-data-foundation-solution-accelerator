@@ -3,15 +3,15 @@
   "Language": "English",
   "Files": [
      {
-        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5700/agentic-applications-for-unified-data-foundation-solution-accelerator/refs/heads/prod/Labs/Gettingstarted.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agentic-applications-for-unified-data-foundation-solution-accelerator/refs/heads/prod/Labs/Gettingstarted.md",
         "Order": 1
      },
      {
-        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5700/agentic-applications-for-unified-data-foundation-solution-accelerator/refs/heads/prod/Labs/Lab1.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agentic-applications-for-unified-data-foundation-solution-accelerator/refs/heads/prod/Labs/Lab1.md",
         "Order": 2
      },
      {
-        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5700/agentic-applications-for-unified-data-foundation-solution-accelerator/refs/heads/prod/Labs/CopilotStudioDeployment.md.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agentic-applications-for-unified-data-foundation-solution-accelerator/refs/heads/prod/Labs/CopilotStudioDeployment.md.md",
         "Order": 3
      }
   ]
