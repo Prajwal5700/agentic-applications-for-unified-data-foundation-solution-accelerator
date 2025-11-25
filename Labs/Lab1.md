@@ -8,7 +8,7 @@ In this lab, you will explore
 
 ## Architecture Diagram
 
-   ![Name](../../Images/aaaarch%20diagram%201.png)
+   ![Name](../Images/aaaarch%20diagram%201.png)
 
 ## Lab Objectives
 
@@ -33,37 +33,37 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-     ![](../../Images/lab1-1.png)
+     ![](../Images/lab1-1.png)
  
 3. Now enter the following **password (1)** and click on **Sign in (2)**.
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-     ![](../../Images/lab1-2.png)
+     ![](../Images/lab1-2.png)
      
 1. If you see the pop-up **Stay Signed in?**, select **Yes**.
 
-   ![](../../Images/lab1-3.png)
+   ![](../Images/lab1-3.png)
 
 1. On **Welcome to the Fabric view** dialog opens, click **Cancel**.
 
-   ![](../../Images/lab1-92.png)
+   ![](../Images/lab1-92.png)
 
 1. On **Microsoft Fabric (Free) license assigned** dialog appears, click **OK** to proceed.
 
-   ![](../../Images/lab1-95.png)
+   ![](../Images/lab1-95.png)
 
 1. You will be navigated to the **Microsoft** **Fabric Home page**.
 
-   ![tour](../../Images/lab1-93.png)
+   ![tour](../Images/lab1-93.png)
 
    >**Note:** If you receive any pop-ups, please **Close** them.
 
-   ![tour](../../Images/lab1-94.png)
+   ![tour](../Images/lab1-94.png)
 
 1. Now, let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
 
-    ![](../../Images/lab1-96.png)
+    ![](../Images/lab1-96.png)
 
 1. The **Create a workspace** dialog opens on the right side of the browser.
 
@@ -71,22 +71,22 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
     >**Note:** Please use the workspace name provided above.
 
-    ![](../../Images/lab1-5.png)
+    ![](../Images/lab1-5.png)
 
 1. Ensure **Fabric capacity (1)** is chosen, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Capacity**, and then click **Apply (3)**.
 
-    ![](../../Images/lab1-6.png)
+    ![](../Images/lab1-6.png)
 
     >**Note:** Close any pop-up that appears on the screen.
 
-    ![](../../Images/lab1-7.png)
+    ![](../Images/lab1-7.png)
 
 1. Retrieve Workspace ID from URL for future steps.
 
 1. The easiest way to find your workspace ID is in the URL of the Fabric site for an item in a workspace. The Fabric URL contains the workspace ID, which is the unique identifier after **/groups/** in the URL, for example: [**11aa111-a11a-1111-1abc-aa1111aaaa**](https://app.fabric.microsoft.com/groups/11aa111-a11a-1111-1abc-aa1111aaaa/list?experience=fabric-developer)
 .
 
-    ![](../../Images/lab1-8.png)
+    ![](../Images/lab1-8.png)
 
 1. Copy the **Workspace ID** from the link and keep it in notepad for future reference.
 
@@ -94,45 +94,45 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 1. Navigate to the **Environment (1)** tab in the lab environment and click on the **Licenses (2)** button. Copy the **GitHub UserEmail (3)** and **GitHub Password (4)**, then save these credentials in **Notepad**. You will need them later during the GitHub login and device verification steps.
 
-   ![](../../Images/lab1-99.png)
+   ![](../Images/lab1-99.png)
 
 1. Open a **Private window** in Microsoft Edge by clicking the three-dot menu **(1)** in the top-right and selecting **New InPrivate window (2)**.
 
-   ![](../../Images/lab1-97.png)
+   ![](../Images/lab1-97.png)
 
 1. In a new browser tab, go to `https://www.github.com/login`.
 
 1. Enter your **GitHub Username (1)** and **GitHub Password (1)** (as saved in Notepad) and click **Sign in (2)** to proceed.
 
-   ![](../../Images/lab1-9.png)
+   ![](../Images/lab1-9.png)
 
 1. Open a new tab in InPrivate window, then go to `http://outlook.office.com/`.
 
-   ![](../../Images/lab1-98.png)
+   ![](../Images/lab1-98.png)
 
 1. Enter your **GitHub Username (1)** (as saved in Notepad) and click **Next (2)** to proceed.
 
-   ![](../../Images/lab1-10.png)
+   ![](../Images/lab1-10.png)
 
 1. Enter your **GitHub Password (1)** (as saved in Notepad) and click **Sign in (2)**.
 
-   ![](../../Images/lab1-11.png)
+   ![](../Images/lab1-11.png)
 
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-   ![](../../Images/ex-1-9.png)
+   ![](../Images/ex-1-9.png)
 
 1. Check your email inbox and copy the **Verification code** sent by GitHub.
 
-   ![](../../Images/lab1-12.png)
+   ![](../Images/lab1-12.png)
    
 1. On the **Device verification** pane, enter the **Device Verification Code (1)** that was emailed to you and click **Verify (2)**.
 
-   ![](../../Images/lab1-13.png)
+   ![](../Images/lab1-13.png)
    
    > **Note:** If you see **Two-factor authentication (2FA) is required for your GitHub account** page next, click on **Remind me tomorrow**
    
-      ![The `New Repository` creation form in GitHub.](../../Images/lab1-100.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](../Images/lab1-100.png "New Repository Creation Form")
 
 ## Task 3: Deploy Azure infrastructure via the provided Bicep templates
 
@@ -161,23 +161,27 @@ Once you've opened the project in [Codespaces](#github-codespaces) you can deplo
 
 1. Select the ODL user used to login into azure. If not logged into azure yet, use the following credentials to login in.
 
-2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-     ![](../../Images/signin.png)
-
-3. Next, provide your Temporary Access Pass:
+     ![](../Images/signin.png)
 
    - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
-     ![](../../Images/TAP.png)
+     ![](../Images/TAP.png)
 
 1. You will see the pop up window, **Are you trying to sign in to Microsoft Azure CLI?**, choose **Continue**.
 
+     ![](../Images/lab1-19.png)
+
 1. You will see the pop up window confirming the sign in as **You have signed in to the Microsoft Azure Cross-platform Command Line Interface application on your device.**
 
+     ![](../Images/lab1-20.png)
+
 1. Navigate to the browser where codespace is created, you will notice that you are logged in as Azure user.
+
+     ![](../Images/lab1-21.png)
 
 1. Provision and deploy all the resources:
 
@@ -186,7 +190,11 @@ Once you've opened the project in [Codespaces](#github-codespaces) you can deplo
     ```
 
 1. Provide an `azd` environment name as **fabricapp**.
+
+     ![](../Images/TAP.png)
+
 1. You will see the subscription available for you, **type 1** choose **Enter** to select the default subscription.
+
 1. Now, you will see the list of locations, use the up/down arrow button to navigate to **Australia East** as location, press **Enter** to select it.
 
 1. You will see two options to choose the programming language for the backend API, as **Enter a value for the 'backendRuntimeStack' infrastructure parameter:**, choose **dotnet** and press **Enter**.
@@ -200,14 +208,20 @@ Once you've opened the project in [Codespaces](#github-codespaces) you can deplo
 
 1. You will see the prompt **Enter a name for the new resource group**, provide **rg-fabricapp** as suggested and press **Enter**
 
+     ![](../Images/lab1-25.png)
+
 1. This deployment can take upto *7-10 minutes* to provision the resources in your account and set up the solution with sample data.
    
     > **Note:** If you encounter an error or timeout during deployment, changing the location may help, as there could be availability constraints for the resources.
     Here are some example regions where the services are available: **East US, East US2, Australia East, UK South, France Central.**
 
-1. Once the deployment has completed successfully, copy the 2 bash commands from the terminal (ex. 
+1. Once the deployment has completed successfully,
+- Copy the **Web app URL (1)** and keep it in notepad for future refrence
+- Copy the **two bash commands (2)** from the terminal (ex. 
 `bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh` and
 `bash ./infra/scripts/fabric_sripts/run_fabric_items_scripts.sh <fabric-workspaceId>`) for later use.
+
+     ![](../Images/lab1-28.png)
 
 1. Run the bash script from the output of the azd deployment. The script will look like the following:
 
@@ -262,7 +276,15 @@ In this task, you will configure Azure App Registrations for a front-end applica
 To help you get started, here are some **Sample Questions** you can ask in the app:
 
 - Show total revenue by year for last 5 years as a line chart.
+
+    ![Add Provider](../Images/lab1-35.png)
+
 - Show top 10 products by Revenue in the last year in a table.
+
+    ![Add Provider](../Images/lab1-36.png)
+
 - Show as a donut chart.
+
+    ![Add Provider](../Images/lab1-38.png)
 
 These questions serve as a great starting point to explore insights from the data.
