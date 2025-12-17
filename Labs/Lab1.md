@@ -62,15 +62,31 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
    ![tour](../Images/lab1-94.png)
 
-1. Select the gear icon in the top-right corner, then choose the Admin Portal. 
+1. Select the **gear icon (1)** in the top-right corner, then choose the **Admin Portal (2)**. 
+
+   ![](../Images/lab1-102.png)
+
+1. If you got the pop up window, **Organize your tenant with domains** and **Tag your data**, choose **Got it (1)**
+
+   ![](../Images/lab1-103.png)
+
+   ![](../Images/lab1-104.png)
 
 1. In the **Admin Portal**, select **Tenant settings** from the left-hand navigation pane. 
 
-1. For the **Users can use Copilot and other features powered by Azure OpenAI** option, **Enable** it if not enabled and **save**.
+   ![](../Images/lab1-109.png)
 
-1. For the **Data sent to Azure OpenAI can be processed outside your capacity's geographic region, compliance boundary, or national cloud instance** option, **Enable** it if not enabled and **save**.
+1. For the **Users can use Copilot and other features powered by Azure OpenAI (1)** setting, ensure it is , **Enabled (2)** if it is not enabled and choose **Apply (3)**.
 
-1. For the **Users can create and share Data agent item types (preview)** option, **Enable** it if not enabled and **save**.
+   ![](../Images/lab1-105.png)
+
+1. For the **Data sent to Azure OpenAI can be processed outside your capacity's geographic region, compliance boundary, or national cloud instance (1)** setting, ensure it is , **Enabled (2)** if it is not enabled and choose **Apply (3)**.
+
+   ![](../Images/lab1-106.png)
+
+1. For the **Users can create and share Data agent item types (preview) (1)** setting, ensure it is , **Enabled (2)** if it is not enabled and choose **Apply (3)**.
+
+   ![](../Images/lab1-107.png)
 
 1. Now, let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
 
@@ -92,7 +108,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
     ![](../Images/lab1-7.png)
 
-1. Retrieve Workspace ID from URL for future steps.
+1. Retrieve **Workspace ID** from URL for future steps.
 
 1. The easiest way to find your workspace ID is in the URL of the Fabric site for an item in a workspace. The Fabric URL contains the workspace ID, which is the unique identifier after **/groups/** in the URL, for example: [**11aa111-a11a-1111-1abc-aa1111aaaa**](https://app.fabric.microsoft.com/groups/11aa111-a11a-1111-1abc-aa1111aaaa/list?experience=fabric-developer)
 .
@@ -129,9 +145,9 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
    ![](../Images/lab1-11.png)
 
-1. If you see the pop-up **Stay Signed in?**, select **No**.
+1. If you see the pop-up **Stay Signed in?**, select **Yes**.
 
-   ![](../Images/ex-1-9.png)
+   ![](../Images/stay1.png)
 
 1. Check your email inbox and copy the **Verification code** sent by GitHub.
 
@@ -176,7 +192,6 @@ Once you've opened the project in [Codespaces](#github-codespaces) you can deplo
       ![The `New Repository` creation form in GitHub.](../Images/lab1-16.png "New Repository Creation Form")
 
 1. A new window **Enter code to allow access** will open in the browser, provide the code copied in the previous step and choose **Next**.
-
 
       ![The `New Repository` creation form in GitHub.](../Images/lab1-29.png "New Repository Creation Form")
 
@@ -224,7 +239,7 @@ Once you've opened the project in [Codespaces](#github-codespaces) you can deplo
    - **python**
    - **dotnet(.NET )**
 
-1. Now, you will see the option to choose the Resource group or create it, keep the curson at **1. Create a new resource group** and press **Enter**.
+1. Now, you will see the option to choose the Resource group or create it, keep the cursor at **1. Create a new resource group** and press **Enter**.
 
 1. Use the up/down arrow button to navigate to **Australia East** as location, press **Enter** to select it.
 
@@ -332,3 +347,13 @@ To help you get started, here are some **Sample Questions** you can ask in the a
     ![Add Provider](../Images/lab1-38.png)
 
 These questions serve as a great starting point to explore insights from the data.
+
+## Summary
+
+In this exercise, you:
+
+
+
+## You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.
+
+![](../Images/nextpage.png)

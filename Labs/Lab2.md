@@ -134,3 +134,10 @@ You will be able to complete the following tasks:
 
 2. Total number of orders in the last 6 months by region
 
+## Summary
+
+In this exercise, you:
+
+
+
+## You have successfully completed the exercise.

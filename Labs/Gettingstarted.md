@@ -92,9 +92,9 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
      ![](../Images/TAP.png)
 
-1. If prompted to stay signed in, you can click **No**.
+1. If prompted to stay signed in, you can click **Yes**.
 
-   ![Stay Signed in](../Images/stay.png)     
+   ![Stay Signed in](../Images/stay1.png)     
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
 
