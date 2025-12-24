@@ -1,4 +1,4 @@
-# Chat with your data [Fabric] Workshop
+# Chat with your data Fabric Workshop
 
 ## Overall Estimated Duration: 4 Hours
 

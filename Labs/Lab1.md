@@ -295,7 +295,7 @@ You can run the solution using GitHub Codespaces. The button will open a web-bas
     Here are some example regions where the services are available: **East US, East US2, Australia East, UK South, France Central.**
 
 1. Once the deployment has completed successfully,
-   - Copy the **Web app URL (1)** and keep it in notepad for future refrence
+   - Copy the **Web app URL (1)** and keep it in notepad for future reference
    - Copy the **two bash commands (2)** from the terminal (ex. 
    `bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh` and
    `bash ./infra/scripts/fabric_sripts/run_fabric_items_scripts.sh <fabric-workspaceId>`) for later use.
@@ -368,7 +368,7 @@ In this task, you will configure Azure App Registrations for a front-end applica
 
       ![](../Images/lab1-40.png)
 
-6. You have successfully added app authentication, and now required to log in to access the application.
+6. You have successfully added app authentication and now required to log in to access the application.
 
 1. Navigate to Overview of the app service, select the default domain to open the web app in different tab of the browser.
 
