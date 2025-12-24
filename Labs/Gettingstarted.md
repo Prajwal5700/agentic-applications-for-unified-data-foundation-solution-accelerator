@@ -20,9 +20,10 @@ By the end of the workshop, you will gain a clear understanding of how structure
 Participants should have:
 
 - A basic understanding of Microsoft Azure and resource groups
-- Familiarity with Microsoft Fabric, including Lakehouse and Dataflows
-- Basic understanding of Azure OpenAI, vector search, and LLM-based applications
-- Some experience with REST APIs, containers, or microservices
+- Familiarity with Microsoft Fabric, especially workspaces, capacities, and Lakehouse concepts
+- Awareness of Copilot and AI features in Microsoft Fabric, including data agents and natural language querying
+- Basic knowledge of command-line tools, including Azure CLI and Azure Developer CLI (azd)
+- Familiarity with GitHub and GitHub Codespaces for source control and cloud-based development environments
 
 ## Getting Started with the lab
 
@@ -69,13 +70,13 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
     ![](../Images/azureportal.png)
 
-2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
      ![](../Images/signin.png)
 
-3. Next, provide your Temporary Access Pass:
+1. Next, provide your Temporary Access Pass:
 
    - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
