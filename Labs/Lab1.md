@@ -6,10 +6,6 @@
 
 In this lab, you will provision a Microsoft Fabric capacity, configure tenant-level settings required for Copilot and data agents, and create a Fabric workspace linked to a Copilot-enabled capacity. You will then deploy the required Azure infrastructure using Bicep templates and Azure Developer CLI (azd), set up application authentication in Azure App Service, and validate the end-to-end solution by interacting with the deployed application to query and visualize data using natural language.
 
-## Architecture Diagram
-
-   ![Name](../Images/aaaarch%20diagram%201.png)
-
 ## Lab Objectives
 
 You will be able to complete the following tasks:
@@ -219,13 +215,15 @@ You can run the solution using GitHub Codespaces. The button will open a web-bas
 
 1. Once you've opened the project in [Codespaces](#github-codespaces) you can deploy it to Azure by following these steps:
 
-1. Run the command below to log in to Azure. When the message **Start by copying the next code** appears, copy the provided code and press **Enter**.:
+1. Run the command below to log in to Azure. When the message **Start by copying the next code** appears, copy the provided code and press **Enter**.
 
     ```shell
     azd auth login
     ```
 
       ![The `New Repository` creation form in GitHub.](../Images/lab1-16.png "New Repository Creation Form")
+
+    > **Note:** If you see the option to Allow the copy to clipboard option, choose **Allow**.
 
 1. A new window **Enter code to allow access** will open in the browser, provide the code copied in the previous step and choose **Next**.
 
@@ -264,7 +262,9 @@ You can run the solution using GitHub Codespaces. The button will open a web-bas
     azd up
     ```
 
-1. Provide an `azd` environment name as **fabricapp**.
+1. Provide an `azd` environment name as **fabricapp** and press **Enter**.
+
+1. In the **Use the fonts on your computer so you can create high-fidelity content** pop up, choose **Allow**.
 
 1. You will see the subscription available for you, **type 1** choose **Enter** to select the default subscription.
 
@@ -274,6 +274,10 @@ You can run the solution using GitHub Codespaces. The button will open a web-bas
 
    - **python**
    - **dotnet(.NET )**
+
+ 1. For the **Enter a value for the 'usecase' infrastructure parameter**, you will see two options as below, choose **Retail-sales-analysis** option for now and press **Enter**.
+      - **Retail-sales-analysis**
+      - **Insurance-improve-customer-meetings** 
 
 1. Now, you will see the option to choose the Resource group or create it, keep the cursor at **1. Create a new resource group** and press **Enter**.
 
@@ -320,6 +324,14 @@ You can run the solution using GitHub Codespaces. The button will open a web-bas
 
       ![The `New Repository` creation form in GitHub.](../Images/lab1-30.png "New Repository Creation Form")
 
+1. You will see the pop up window, **Are you trying to sign in to Microsoft Azure CLI?**, choose **Continue**.
+
+     ![](../Images/lab1-19.png)
+
+1. You will see the pop up window confirming the sign in as **You have signed in to the Microsoft Azure Cross-platform Command Line Interface application on your device.**
+
+     ![](../Images/lab1-20.png)
+
 1. Type **1** to select the subscription and they press **Enter**.
 
       ![](../Images/lab1-31.png)
@@ -350,9 +362,9 @@ In this task, you will configure Azure App Registrations for a front-end applica
 
       ![](../Images/lab1-39.png)
 
-3. Click on `Identity Provider` dropdown to see a list of identity providers. Select the first option `Microsoft` from the drop-down list.
+3. Click on `Identity Provider` dropdown to see a list of identity providers. Select the first option `Microsoft (1)` from the drop-down list.
 
-4. Provide the name of App registration as  **fabric-app**. In `client secret expiration` under **App registration** choose **Recommended 180 days**. Accept the default values and click on `Add` button to go back to the previous page with the identity provider added.
+4. Keep **App registration type** as **Create new app registration (2)**. Provide the name of App registration as  **fabric-app (3)**. In `client secret expiration` under **App registration** choose **Recommended 180 days (4)**. Accept the default values and click on **Add (5)** button to go back to the previous page with the identity provider added.
 
       ![](../Images/lab1-40.png)
 

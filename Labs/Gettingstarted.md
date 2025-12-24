@@ -4,9 +4,9 @@
 
 ## Overview
 
-In this hands-on lab, you will learn how to build and deploy agentic AI applications using Microsoft’s Unified Data Foundation (UDF) solution accelerator. This lab walks you through integrating Microsoft Fabric, Azure AI, containerized microservices, and orchestration workflows to create intelligent, production-ready agentic solutions.
+In this hands-on lab, you will explore how to design and deploy agentic AI applications using Microsoft’s Unified Data Foundation (UDF) solution accelerator. The lab guides you through combining Microsoft Fabric, Azure AI, containerized microservices, and orchestration workflows to build intelligent, production-ready agentic solutions.
 
-By the end of this workshop, you will understand how structured data, enterprise analytics, and LLM-based agents work together to power next-generation enterprise applications.
+By the end of the workshop, you will gain a clear understanding of how structured data, enterprise analytics, and LLM-powered agents come together to enable next-generation enterprise applications.
 
 ## Objectives
 
@@ -15,9 +15,6 @@ By the end of this workshop, you will understand how structured data, enterprise
 - **Lab 02: Working with the Data Foundation (Fabric + OneLake):** In this hands-on lab, participants will learn how data flows into the Lakehouse, explore SQL endpoints, create Dataflows Gen2, and work with the Fabric workspace deployed as part of the solution accelerator.
 
 
-- **Lab 03: Building and Extending Agentic Applications:** In this hands-on lab, participants will configure agent workflows using Azure AI Foundry or Azure OpenAI, connect them to operational data, and test container-based APIs deployed as part of the accelerator.
-
-- **Lab 04: Orchestration, APIs & End-to-End Scenario:** In this hands-on lab, participants will examine how the agent interacts with backend microservices, trigger business processes, and view the entire agentic workflow end-to-end.
 ## Prerequisites
 
 Participants should have:
@@ -66,14 +63,6 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 ![](../Images/res.png)
 
-### Lab Validation
-
-1. After completing the task, hit the **Validate** button under the Validation tab integrated into your lab guide. You can proceed to the next task if you receive a success message. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-
-   ![Inline Validation](../Images/valid.png)
-
-1. If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
-
 ## Let's Get Started with Azure Portal
 
 1. On your virtual machine, click on the **Azure Portal** icon.
@@ -96,7 +85,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
    ![Stay Signed in](../Images/stay1.png)     
 
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
    ![Stay Signed in](../Images/03.png)   
 
