@@ -1,4 +1,4 @@
-# Chat with your data Fabric Workshop
+# Chat with your data Fabric
 
 ## Overall Estimated Duration: 4 Hours
 
@@ -10,13 +10,9 @@ By the end of the workshop, you will gain a clear understanding of how structure
 
 ## Objectives
 
-- **Lab 01: Building and Deploying a Fabric-Integrated AI Application on Azure:**
+- **Building and Deploying a Fabric-Integrated AI Application on Azure :** In this hands-on lab, participants will provision and configure Microsoft Fabric for Copilot and data agents, deploy Azure infrastructure using Bicep and Azure Developer CLI, set up application authentication, and validate an end-to-end solution by querying and visualizing data through natural language interactions.
 
-   In this hands-on lab, participants will provision and configure Microsoft Fabric for Copilot and data agents, deploy Azure infrastructure using Bicep and Azure Developer CLI, set up application authentication, and validate an end-to-end solution by querying and visualizing data through natural language interactions.
-
-- **Lab 02: Creating Fabric Data Agent and Publish to Teams:**
-
-   In this hands-on lab, participants will learn how to create a Microsoft Fabric Data Agent connected to a Lakehouse, build and configure a custom AI agent in Microsoft Copilot Studio, integrate both agents, and publish the solution to Microsoft Teams to enable natural language, data-driven business insights.
+- **Creating Fabric Data Agent and Publish to Teams :** In this hands-on lab, participants will learn how to create a Microsoft Fabric Data Agent connected to a Lakehouse, build and configure a custom AI agent in Microsoft Copilot Studio, integrate both agents, and publish the solution to Microsoft Teams to enable natural language, data-driven business insights.
 
 
 ## Prerequisites
@@ -41,7 +37,7 @@ This lab showcases an end-to-end agentic AI solution using **Microsoft Fabric** 
 
 ## Getting Started with the lab
 
-Welcome to your Chat with your data Fabric Workshop, Let's begin by making the most of this experience.
+Welcome to your Chat with your data Fabric Workshop. Let's begin by making the most of this experience.
 
 ## Accessing Your Lab Environment
 
@@ -74,7 +70,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Managing Your Virtual Machine
 
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![](../Images/res.png)
 
@@ -118,6 +114,5 @@ Learner Support Contacts:
 Click **Next** from the bottom right corner to embark on your Lab journey!
 
 ![](../Images/nextpage.png)
-
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
