@@ -30,13 +30,13 @@ You will be able to complete the following tasks:
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-      ![](../Images/lab1-1.png)
+     ![](../Images/lab1-1.png)
  
 3. Now enter the following **password (1)** and click on **Sign in (2)**.
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-      ![](../Images/lab1-2.png)
+     ![](../Images/lab1-2.png)
      
 1. If you see the pop-up **Stay Signed in?**, select **Yes**.
 
@@ -102,13 +102,13 @@ In this task, you will provision a Microsoft Fabric capacity by configuring the 
     | Select the resource size | Select **F2 (6)** sku and choose **Select (7)** |    
     | Fabric capacity administrator | Choose **<inject key="AzureAdUserEmail"></inject> (8)** |
 
-       ![](../Images/lab1-112.png)
+     ![](../Images/lab1-112.png)
 
 1. Wait for the validation process to complete. Then click on **Create**.
 
     >**Note**: Wait for the Fabric capacity to be created. This should take about 1-2 minutes.
 
-       ![](../Images/lab1-114.png)
+     ![](../Images/lab1-114.png)
 
 1. On the deployment blade, click **Go to resource** to display the Fabric capacity blade.
 
@@ -131,7 +131,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 1. Navigate back to the **Microsoft Fabric Home page**.
 
-   ![tour](../Images/lab1-93.png)
+    ![tour](../Images/lab1-93.png)
 
 1. Select the **gear icon (1)** in the top-right corner, then choose the **Admin Portal (2)**. 
 
@@ -232,7 +232,7 @@ In this task, you will authenticate to GitHub and complete device verification, 
    
    > **Note:** If you see **Two-factor authentication (2FA) is required for your GitHub account** page next, click on **Remind me tomorrow**
    
-      ![The `New Repository` creation form in GitHub.](../Images/lab1-100.png "New Repository Creation Form")
+     ![The `New Repository` creation form in GitHub.](../Images/lab1-100.png "New Repository Creation Form")
 
 1. Open the solution accelerator by copying the below link into new tab of edge browser and login using the same GitHub credentials used in previous task:
 
@@ -267,27 +267,27 @@ In this task, you will authenticate to GitHub and complete device verification, 
       ![The `New Repository` creation form in GitHub.](../Images/lab1-30.png "New Repository Creation Form")
 
     > **Note:** If you are not logged into azure yet or using private window, use the following credentials to login in.
-   - You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+    - You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
 
-      - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+        - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-          ![](../Images/signin.png)
+            ![](../Images/signin.png)
 
-      - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
+        - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
-          ![](../Images/TAP.png)
+            ![](../Images/TAP.png)
 
 1. You will see the pop up window, **Are you trying to sign in to Microsoft Azure CLI?**, choose **Continue**.
 
-      ![](../Images/lab1-19.png)
+    ![](../Images/lab1-19.png)
 
 1. You will see the pop up window confirming the sign in as **You have signed in to the Microsoft Azure Cross-platform Command Line Interface application on your device.**
 
-      ![](../Images/lab1-20.png)
+    ![](../Images/lab1-20.png)
 
 1. Navigate to the browser where codespace is created, you will notice that you are logged in as Azure user.
 
-      ![](../Images/lab1-21.png)
+    ![](../Images/lab1-21.png)
 
 1. Execute the following command to provision and deploy the required resources.
 
@@ -307,8 +307,9 @@ In this task, you will authenticate to GitHub and complete device verification, 
    - **dotnet(.NET )**
 
  1. For the **Enter a value for the 'usecase' infrastructure parameter**, you will see two options as below, choose **Retail-sales-analysis** option for now and press **Enter**.
-      - **Retail-sales-analysis**
-      - **Insurance-improve-customer-meetings** 
+
+    - **Retail-sales-analysis**
+    - **Insurance-improve-customer-meetings** 
 
 1. Now, you will see the option to choose the Resource group or create it, keep the cursor at **1. Create a new resource group** and press **Enter**.
 
@@ -316,22 +317,23 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
 1. You will see the prompt **Enter a name for the new resource group**, provide **rg-fabricapp** as suggested and press **Enter**
 
-      ![](../Images/lab1-25.png)
+    ![](../Images/lab1-25.png)
 
 1. This deployment can take upto **7-10 minutes** to provision the resources in your account and set up the solution with sample data.
 
-      ![](../Images/lab1-26.png)
+    ![](../Images/lab1-26.png)
 
     > **Note:** If you encounter an error or timeout during deployment, changing the location may help, as there could be availability constraints for the resources.
     Here are some example regions where the services are available: **East US, East US2, Australia East, UK South, France Central.**
 
-1. Once the deployment has completed successfully,
+1. Once the deployment has completed successfully:
+
    - Copy the **Web app URL (1)** and keep it in notepad for future reference
    - Copy the **two bash commands (2)** from the terminal (ex. 
    `bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh` and
    `bash ./infra/scripts/fabric_sripts/run_fabric_items_scripts.sh <fabric-workspaceId>`) for later use.
 
-       ![](../Images/lab1-28.png)
+     ![](../Images/lab1-28.png)
 
 1. Run the bash script from the output of the azd deployment. The script will look like the following:
 
@@ -341,7 +343,7 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
 1. Copy the link as given in the output after running the script as mentioned below and copy the code:
 
-      ![The `New Repository` creation form in GitHub.](../Images/lab1-101.png "New Repository Creation Form")
+    ![The `New Repository` creation form in GitHub.](../Images/lab1-101.png "New Repository Creation Form")
 
 1. Provide the below link into the new browser tab as copied in previous step. A new window **Enter code to allow access** will open in the browser, provide the code copied in the previous step and choose **Next**.
 
@@ -349,23 +351,23 @@ In this task, you will authenticate to GitHub and complete device verification, 
     https://microsoft.com/devicelogin
     ```
 
-      ![The `New Repository` creation form in GitHub.](../Images/lab1-29.png "New Repository Creation Form")
+     ![The `New Repository` creation form in GitHub.](../Images/lab1-29.png "New Repository Creation Form")
 
 1. Select the ODL user used to login into azure.
 
-      ![The `New Repository` creation form in GitHub.](../Images/lab1-30.png "New Repository Creation Form")
+    ![The `New Repository` creation form in GitHub.](../Images/lab1-30.png "New Repository Creation Form")
 
 1. You will see the pop up window, **Are you trying to sign in to Microsoft Azure CLI?**, choose **Continue**.
 
-      ![](../Images/lab1-19.png)
+    ![](../Images/lab1-19.png)
 
 1. You will see the pop up window confirming the sign in as **You have signed in to the Microsoft Azure Cross-platform Command Line Interface application on your device.**
 
-      ![](../Images/lab1-20.png)
+    ![](../Images/lab1-20.png)
 
 1. Type **1** to select the subscription and they press **Enter**. Wait for the command to run successfully.
 
-       ![](../Images/lab1-31.png)
+    ![](../Images/lab1-31.png)
 
 1. Run the bash script from the output of the azd deployment. Replace the **fabric-workspaceId** with your Fabric workspace Id created in the **Task 2 Step 13**. The script will look like the following:
 
@@ -375,7 +377,7 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
 1. Once the script has run successfully, go to the deployed resource group, find the App Service, and get the app URL from `Default domain`.
 
-       ![](../Images/lab1-33.png)
+    ![](../Images/lab1-33.png)
 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
@@ -391,31 +393,31 @@ In this task, you will enable authentication for the Azure App Service by adding
 
 1. Search for app services in azure portal and select it.
 
-       ![](../Images/lab1-43.png)
+    ![](../Images/lab1-43.png)
 
 1. You will see two app services in running state. Select the app service without **cs** in the name of it.
 
-       ![](../Images/lab1-42.png)
+    ![](../Images/lab1-42.png)
 
 1. Click on `Authentication (1)` from left menu under Settings. Then, choose `Add identity provider (2)` to see a list of identity providers.
 
-       ![](../Images/lab1-39.png)
+    ![](../Images/lab1-39.png)
 
 3. Click on `Identity Provider` dropdown to see a list of identity providers. Select the first option `Microsoft (1)` from the drop-down list.
 
 4. Keep **App registration type** as **Create new app registration (2)**. Provide the name of App registration as  **fabric-app (3)**. In `client secret expiration` under **App registration** choose **Recommended 180 days (4)**. Accept the default values and click on **Add (5)** button to go back to the previous page with the identity provider added.
 
-       ![](../Images/lab1-40.png)
+    ![](../Images/lab1-40.png)
 
 6. You have successfully added app authentication and now required to log in to access the application.
 
 1. Navigate to Overview of the app service, select the default domain to open the web app in different tab of the browser.
 
-       ![](../Images/lab1-46.png)
+    ![](../Images/lab1-46.png)
 
 1. You will see Permission requested tab, choose **Accept** to login in using the same user used to logged into Azure.
 
-       ![](../Images/lab1-41.png)
+    ![](../Images/lab1-41.png)
 
    >**Note:** If the web application prompts for login, use the same Azure credentials you used earlier, i.e.
 
