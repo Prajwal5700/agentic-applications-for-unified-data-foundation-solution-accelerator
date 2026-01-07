@@ -230,8 +230,8 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
     ![](../Images/lab1-13.png)
    
-   > **Note:** If you see **Two-factor authentication (2FA) is required for your GitHub account** page next, click on **Remind me tomorrow**
-   
+    > **Note:** If you see **Two-factor authentication (2FA) is required for your GitHub account** page next, click on **Remind me tomorrow**
+
      ![The `New Repository` creation form in GitHub.](../Images/lab1-100.png "New Repository Creation Form")
 
 1. Open the solution accelerator by copying the below link into new tab of edge browser and login using the same GitHub credentials used in previous task:
@@ -303,13 +303,13 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
 1. You will see two options to choose the programming language for the backend API, as **Enter a value for the 'backendRuntimeStack' infrastructure parameter:**, choose **dotnet** and press **Enter**.
 
-   - **python**
-   - **dotnet(.NET )**
+    - **python**
+    - **dotnet(.NET )**
 
  1. For the **Enter a value for the 'usecase' infrastructure parameter**, you will see two options as below, choose **Retail-sales-analysis** option for now and press **Enter**.
 
     - **Retail-sales-analysis**
-    - **Insurance-improve-customer-meetings** 
+    - **Insurance-improve-customer-meetings**
 
 1. Now, you will see the option to choose the Resource group or create it, keep the cursor at **1. Create a new resource group** and press **Enter**.
 
@@ -328,8 +328,8 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
 1. Once the deployment has completed successfully:
 
-   - Copy the **Web app URL (1)** and keep it in notepad for future reference
-   - Copy the **two bash commands (2)** from the terminal (ex. 
+    - Copy the **Web app URL (1)** and keep it in notepad for future reference
+    - Copy the **two bash commands (2)** from the terminal (ex. 
    `bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh` and
    `bash ./infra/scripts/fabric_sripts/run_fabric_items_scripts.sh <fabric-workspaceId>`) for later use.
 
@@ -419,11 +419,11 @@ In this task, you will enable authentication for the Azure App Service by adding
 
     ![](../Images/lab1-41.png)
 
-   >**Note:** If the web application prompts for login, use the same Azure credentials you used earlier, i.e.
+    >**Note:** If the web application prompts for login, use the same Azure credentials you used earlier, i.e.
 
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
- 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
 ## Task 5: Testing the application
 
