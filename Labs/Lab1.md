@@ -333,7 +333,7 @@ In this task, you will authenticate to GitHub and complete device verification, 
    `bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh` and
    `bash ./infra/scripts/fabric_sripts/run_fabric_items_scripts.sh <fabric-workspaceId>`) for later use.
 
-     ![](../Images/lab1-28.png)
+      ![](../Images/lab1-28.png)
 
 1. Run the bash script from the output of the azd deployment. The script will look like the following:
 
