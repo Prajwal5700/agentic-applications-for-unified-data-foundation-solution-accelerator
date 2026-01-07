@@ -16,9 +16,9 @@ You will be able to complete the following tasks:
 - Task 4: Set Up Authentication in Azure App Service
 - Task 5: Testing the application
 
-## Task 1: Create a fabric capacity
+## Pre-requisite
 
-In this task, you will provision a Microsoft Fabric capacity by configuring the required Azure settings and assigning a Fabric administrator.
+## Activating fabric tenant
 
 1. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar:
 
@@ -58,7 +58,31 @@ In this task, you will provision a Microsoft Fabric capacity by configuring the 
 
    ![tour](../Images/lab1-94.png)
 
-1. In the search bar, type **Microsoft Fabric (1)** and select the **Microsoft Fabric (2)** option from the services.
+## Activating Microsoft Copilot Studio
+
+1. In a new tab, navigate to **Microsoft Copilot Studio** by copying and pasting the following URL into the address bar:
+
+   ```
+   https://copilotstudio.microsoft.com/
+   ```
+1. You will see **Welcome to Microsoft Copilot Studio** page, choose the Country/region as **United States (1)** then click on **Get started (2)** button.
+
+    ![quota-check-output](../Images/lab1-56.png)
+
+1. In the Copilot studio page, you may see pop up window **We've updated you to the latest version of Microsoft Copilot Studio**, choose **Got it.**
+
+    ![quota-check-output](../Images/lab2-6.png)
+
+    > **Note:** If you see the pop up **What's new in Copilot Studio** choose **Got it.**
+
+    ![quota-check-output](../Images/lab2-7.png)
+
+## Task 1: Create a fabric capacity
+
+In this task, you will provision a Microsoft Fabric capacity by configuring the required Azure settings and assigning a Fabric administrator.
+
+
+1. Navigate to the Azure portal tab. In the search bar, type **Microsoft Fabric (1)** and select the **Microsoft Fabric (2)** option from the services.
 
    ![](../Images/lab1-110.png)
 
@@ -73,7 +97,7 @@ In this task, you will provision a Microsoft Fabric capacity by configuring the 
     | Subscription | **Keep it as default (1)**  |
     | Resource Group | **Fabric (2)** |
     | Capacity name | **capacity<inject key="DeploymentID" enableCopy="false"/>(3)** |
-    | Region | **<inject key="Region" enableCopy="false"/> (4)** |
+    | Region | **Keep it as default (4)** |
     | Size | Select **Change size (5)** |
     | Select the resource size | Select **F2 (6)** sku and choose **Select (7)** |    
     | Fabric capacity administrator | Choose **<inject key="AzureAdUserEmail"></inject> (8)** |
@@ -93,6 +117,13 @@ In this task, you will provision a Microsoft Fabric capacity by configuring the 
 1. Verify that the status of fabric capacity is in **Active** state.
 
    ![](../Images/lab1-115.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="207abae5-efc7-4a67-9e86-0a14078227ae" />
 
 ## Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
 
@@ -140,7 +171,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
     ![](../Images/lab1-5.png)
 
-1. Ensure **Fabric capacity (1)** is chosen, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Capacity**, and then click **Apply (3)**.
+1. Ensure **Fabric capacity (1)** is chosen, verify that **capacity<inject key="DeploymentID" enableCopy="false"/>(2)** is selected under **Capacity**, and then click **Apply (3)**.
 
     ![](../Images/lab1-6.png)
 
@@ -158,6 +189,8 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 1. Copy the **Workspace ID** from the link and keep it in notepad for future reference.
 
 ## Task 3: Deploy Azure infrastructure via the provided Bicep templates
+
+In this task, you will authenticate to GitHub and complete device verification, then use GitHub Codespaces and Azure Developer CLI (azd) to deploy the solution’s Azure infrastructure. You will sign in to Azure, run azd up to provision resources, and execute post-deployment scripts to configure agents and Fabric components.
 
 1. Navigate to the **Environment (1)** tab in the lab environment and click on the **Licenses (2)** button. Copy the **GitHub UserName (3)** and **GitHub Password (4)**, then save these credentials in **Notepad**. You will need them later during the GitHub login and device verification steps.
 
@@ -193,7 +226,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
    ![](../Images/lab1-12.png)
    
-1. On the **Device verification** pane, enter the **Device Verification Code (1)** that was emailed to you and click **Verify (2)**.
+1. On the **Device verification** pane, enter the **Device Verification Code (1)** that was emailed to you and it will **Verify (2)** automatically.
 
    ![](../Images/lab1-13.png)
    
@@ -201,11 +234,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
    
       ![The `New Repository` creation form in GitHub.](../Images/lab1-100.png "New Repository Creation Form")
 
-## Task 4: Deploy Azure infrastructure via the provided Bicep templates
-
-You can run the solution using GitHub Codespaces. The button will open a web-based VS Code instance in your browser:
-
-1. Open the solution accelerator by copying the below link into new tab of edge browser:
+1. Open the solution accelerator by copying the below link into new tab of edge browser and login using the same GitHub credentials used in previous task:
 
     [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/CloudLabsAI-Azure/agentic-applications-for-unified-data-foundation-solution-accelerator)
 
@@ -217,7 +246,7 @@ You can run the solution using GitHub Codespaces. The button will open a web-bas
 
       ![The `New Repository` creation form in GitHub.](../Images/lab1-15.png "New Repository Creation Form")
 
-1. Once you've opened the project in [Codespaces](#github-codespaces) you can deploy it to Azure by following these steps:
+1. Once you've opened the project in **Codespaces** you can deploy it to Azure by following these steps:
 
 1. Run the command below to log in to Azure. When the message **Start by copying the next code** appears, copy the provided code and press **Enter**.
 
@@ -266,9 +295,7 @@ You can run the solution using GitHub Codespaces. The button will open a web-bas
     azd up
     ```
 
-1. Provide an `azd` environment name as **fabricapp** and press **Enter**.
-
-1. In the **Use the fonts on your computer so you can create high-fidelity content** pop up, choose **Allow**.
+1. Provide an `azd` environment name as **fabricapp** when prompted **Enter a unique Environment name** and press **Enter**.
 
 1. You will see the subscription available for you, **type 1** choose **Enter** to select the default subscription.
 
@@ -336,11 +363,11 @@ You can run the solution using GitHub Codespaces. The button will open a web-bas
 
      ![](../Images/lab1-20.png)
 
-1. Type **1** to select the subscription and they press **Enter**.
+1. Type **1** to select the subscription and they press **Enter**. Wait for the command to run successfully.
 
       ![](../Images/lab1-31.png)
 
-1. Run the bash script from the output of the azd deployment. Replace the **fabric-workspaceId** with your Fabric workspace Id created in the previous steps. The script will look like the following:
+1. Run the bash script from the output of the azd deployment. Replace the **fabric-workspaceId** with your Fabric workspace Id created in the **Task 2 Step 13**. The script will look like the following:
 
     ```Shell
     bash ./infra/scripts/fabric_scripts/run_fabric_items_scripts.sh <fabric-workspaceId>
@@ -350,9 +377,17 @@ You can run the solution using GitHub Codespaces. The button will open a web-bas
 
       ![](../Images/lab1-33.png)
 
-## Task 5: Set Up Authentication in Azure App Service
 
-In this task, you will configure Azure App Registrations for a front-end application.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="5d64b6bb-4a04-4b87-b94f-faa5389bad0e" />
+
+## Task 4: Set Up Authentication in Azure App Service
+
+In this task, you will enable authentication for the Azure App Service by adding Microsoft as an identity provider, creating a new app registration, and validating secure user sign-in through the app’s default domain.
 
 1. Search for app services in azure portal and select it.
 
@@ -382,7 +417,15 @@ In this task, you will configure Azure App Registrations for a front-end applica
 
       ![](../Images/lab1-41.png)
 
+   >**Note:** If the web application prompts for login, use the same Azure credentials you used earlier, i.e.
+
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+
 ## Task 5: Testing the application
+
+In this task, you will validate the deployed application by submitting natural language queries and reviewing the generated visualizations. Using sample prompts, you will test the app’s ability to retrieve data, perform analysis, and display results through charts and tables.
 
 To help you get started, here are some **Sample Questions** you can ask in the app:
 
