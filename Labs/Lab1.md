@@ -20,46 +20,6 @@ You will be able to complete the following tasks:
 
 In this task, you will provision a Microsoft Fabric capacity by configuring the required Azure settings and assigning a Fabric administrator.
 
-1. In the search bar, type **Microsoft Fabric (1)** and select the **Microsoft Fabric (2)** option from the services.
-
-   ![](../Images/lab1-110.png)
-
-1. On **Microsoft Fabric** blade, click **+ Create**.
-
-   ![](../Images/lab1-111.png)
-
-1. In the **Create Fabric capacity** page, under **Basics** tab provide the below details and select **Review + create (9)**:
-
-    | Setting | Value |
-    | --- | --- |
-    | Subscription | **Keep it as default (1)**  |
-    | Resource Group | **Fabric (2)** |
-    | Capacity name | **capacity<inject key="DeploymentID" enableCopy="false"/>(3)** |
-    | Region | **Provide a secure password (4)** |
-    | Size | Select **Change size (5)** |
-    | Select the resource size | Select **F2 (6)** sku and choose **Select (7)** |    
-    | Fabric capacity administrator | Choose **<inject key="AzureAdUserEmail"></inject> (8)** |
-
-      ![](../Images/lab1-112.png)
-
-1. Wait for the validation process to complete. Then click on **Create**.
-
-    >**Note**: Wait for the Fabric capacity to be created. This should take about 1-2 minutes.
-
-      ![](../Images/lab1-114.png)
-
-1. On the deployment blade, click **Go to resource** to display the Fabric capacity blade.
-
-   ![](../Images/lab1-113.png)
-
-1. Verify that the status of fabric capacity is in **Active** state.
-
-   ![](../Images/lab1-115.png)
-
-## Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
-
-In this task, you will create a new workspace in Microsoft Fabric to organize and manage your data and analytics assets. The workspace will be linked to a Copilot-enabled capacity, providing access to AI-powered features such as natural language queries and intelligent data insights.
-
 1. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar:
 
    ```
@@ -90,13 +50,57 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
    ![](../Images/lab1-95.png)
 
-1. You will be navigated to the **Microsoft** **Fabric Home page**.
+1. You will be navigated to the **Microsoft Fabric Home page**.
 
    ![tour](../Images/lab1-93.png)
 
    >**Note:** If you receive any pop-ups, please **Close** them.
 
    ![tour](../Images/lab1-94.png)
+
+1. In the search bar, type **Microsoft Fabric (1)** and select the **Microsoft Fabric (2)** option from the services.
+
+   ![](../Images/lab1-110.png)
+
+1. On **Microsoft Fabric** blade, click **+ Create**.
+
+   ![](../Images/lab1-111.png)
+
+1. In the **Create Fabric capacity** page, under **Basics** tab provide the below details and select **Review + create (9)**:
+
+    | Setting | Value |
+    | --- | --- |
+    | Subscription | **Keep it as default (1)**  |
+    | Resource Group | **Fabric (2)** |
+    | Capacity name | **capacity<inject key="DeploymentID" enableCopy="false"/>(3)** |
+    | Region | **<inject key="Region" enableCopy="false"/> (4)** |
+    | Size | Select **Change size (5)** |
+    | Select the resource size | Select **F2 (6)** sku and choose **Select (7)** |    
+    | Fabric capacity administrator | Choose **<inject key="AzureAdUserEmail"></inject> (8)** |
+
+      ![](../Images/lab1-112.png)
+
+1. Wait for the validation process to complete. Then click on **Create**.
+
+    >**Note**: Wait for the Fabric capacity to be created. This should take about 1-2 minutes.
+
+      ![](../Images/lab1-114.png)
+
+1. On the deployment blade, click **Go to resource** to display the Fabric capacity blade.
+
+   ![](../Images/lab1-113.png)
+
+1. Verify that the status of fabric capacity is in **Active** state.
+
+   ![](../Images/lab1-115.png)
+
+## Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
+
+In this task, you will create a new workspace in Microsoft Fabric to organize and manage your data and analytics assets. The workspace will be linked to a Copilot-enabled capacity, providing access to AI-powered features such as natural language queries and intelligent data insights.
+
+1. Navigate back to the **Microsoft Fabric Home page**.
+
+   ![tour](../Images/lab1-93.png)
 
 1. Select the **gear icon (1)** in the top-right corner, then choose the **Admin Portal (2)**. 
 
