@@ -33,17 +33,17 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 
     ![quota-check-output](../Images/lab1-49.png)
 
-1. Click on **+ Data Source (1)** and select the **retail_lakehouse_xxxxxxx Lakehouse (2)**, then choose **Add (3)**  and select the relevant tables, for now we will select **all tables (4)**.
+1. Click on **+ Add data (1)** then choose **Data Source (2)** from the dropdown list and select the **retail_lakehouse_xxxxxxx Lakehouse (2)**, then choose **Add (3)**  and select the relevant tables, for now we will select **all tables (4)**.
 
-    ![quota-check-output](../Images/lab1-51.png)
+    ![quota-check-output](../Images/jan2026-chat-fabric-7.png)
 
     ![quota-check-output](../Images/lab2-1.png)
 
-    ![quota-check-output](../Images/lab2-2.png)
+    ![quota-check-output](../Images/jan2026-chat-fabric-8.png)
 
 1. Click on `Publish` from the toolbar to publish the data agent.
 
-    ![quota-check-output](../Images/lab2-3.png)
+    ![quota-check-output](../Images/jan2026-chat-fabric-9.png)
 
 1. Add the **Description (1)** of agent, then click on **Publish (2)** from the **Publish data agent** window:
 
@@ -51,7 +51,7 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
     You are an intelligent data agent designed to help users navigate and understand a structured database schema related to customer and order management. This database comprises multiple tables, each containing specific information about customers, their accounts, orders, products, and payments.
     ```
 
-    ![quota-check-output](../Images/lab2-4.png)
+    ![quota-check-output](../Images/jan2026-chat-fabric-10.png)
 
 1. Then, you can start asking questions.
 
@@ -65,18 +65,18 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/lab2-8.png)
 
-1. On the Agents pane, select **Skip to configure (1)** to proceed with creating custom agent.
+1. On the Agents pane, choose **Edit (1)** to proceed with creating custom agent.
 
-    ![quota-check-output](../Images/lab2-9.png)
+    ![quota-check-output](../Images/jan2026-chat-fabric-13.png)
 
-1. Configure your agent by giving the name and description provided below that describes its purpose and role then choose **Create (3)**.
+1. Configure your agent by giving the name and description provided below that describes its purpose and role then choose **Save (3)**.
 
     | Setting | Value |
     | --- | --- |
     | Name  | **Adventure Work Sales Agent (1)** |
     | Description | **Adventure Work Sales Agent is a custom agent built in Microsoft Copilot Studio and is designed to answer business questions about customers and product sales (2)** |
 
-    ![quota-check-output](../Images/lab1-61.png)
+    ![quota-check-output](../Images/jan2026-chat-fabric-14.png)
 
 1. You will see the prompt in the screen, **Setting up your copilot may take a while**, wait for sometime till your agent gets created.
 
@@ -120,7 +120,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/lab2-28.png)
 
-1. Select the connected Fabric data agent. Under Additional details, you can optionally choose the authentication method for the Fabric data agent as either **End-user credentials** or **Maker-provided credentials**. If you select **End-user credentials**, ensure that users have the required access to the Fabric data agent and its underlying data sources.
+1. Select the connected Fabric data agent. Under **Additional details**, you can optionally choose the authentication method for the Fabric data agent as either **End-user credentials** or **Maker-provided credentials**. If you select **End-user credentials**, ensure that users have the required access to the Fabric data agent and its underlying data sources.
 
     ![quota-check-output](../Images/lab2-29.png)
 
@@ -134,7 +134,11 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/lab2-20.png)
 
-1. Use the **Test** chat pane available on the right-hand side to interact with the agent by asking sample questions. Review the responses to verify that the custom AI agent is correctly engaging the connected Fabric data agents and refine its behavior as needed.
+1. Use the **Test (1)** chat pane available on the right-hand side to interact with the agent by asking sample questions. Click on **Allow (2)** in Fabric data agent after first interaction to the agent.
+
+    ![quota-check-output](../Images/jan2026-chat-fabric-16.png)
+
+1. Review the responses to verify that the custom AI agent is correctly engaging the connected Fabric data agents and refine its behavior as needed.
 
     ![quota-check-output](../Images/lab2-41.png)
 
@@ -172,6 +176,10 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/lab2-36.png)
 
+    > **Note:** Wait a few moments for the Add agent page to appear. If it doesn’t load, navigate back to the Copilot page and select See agent in Teams again to open the agent in Microsoft Teams.
+
+    > **Note:** If relaunching Teams still does not allow the agent to be added, open Copilot Studio in a private or incognito window and repeat the steps to add the agent in Teams. This should resolve the issue.
+
 1. You will see a confirmation that the agent has been added successfully. In the new pop-up window, select **Open** to continue.
 
     ![quota-check-output](../Images/lab2-37.png)
@@ -189,6 +197,16 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 1. Try one more prompt to validate the agent, for example: **Provide me the total number of orders in the last 6 months by region.**
 
     ![quota-check-output](../Images/lab2-40.png)
+
+1. Once you have finished exploring the application, you can delete the resources by running the following command, and providing **y** for the two prompts i.e **Total resources to delete: 12., are you sure you want to continue?** and **Would you like to permanently delete these resources instead allowing their names to be reused?**
+
+   ```
+   azd down
+   ```
+
+    ![quota-check-output](../Images/jan2026-chat-fabric-17.png)
+
+1. Running this step will permanently delete all Azure resources created during the setup.
 
 ## Summary
 
