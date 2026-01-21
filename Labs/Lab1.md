@@ -42,13 +42,27 @@ You will be able to complete the following tasks:
 
     ![](../Images/lab1-3.png)
 
+1. In the **You've selected Microsoft Fabric free** page, under **Let's get you started** option, choose **Sign In**.
+
+    ![](../Images/jan2026-chat-fabric-1.png)
+
+1. In the **Create your account** option, provide the following details and choose **Get Started (4)**:
+
+    | Setting | Value |
+    | --- | --- |
+    | Country or Region | **United States (1)**  |
+    | Job title | **Cloud Consultant (2)** |
+    | Business phone number | **1234567890 (3)** |
+
+    ![](../Images/jan2026-chat-fabric-2.png)
+
+1. In the **Confirmation detailst** option, choose **Get Started (4)**.
+
+    ![](../Images/jan2026-chat-fabric-3.png)
+
 1. On **Welcome to the Fabric view** dialog opens, click **Cancel**.
 
     ![](../Images/lab1-92.png)
-
-1. On **Microsoft Fabric (Free) license assigned** dialog appears, click **OK** to proceed.
-
-    ![](../Images/lab1-95.png)
 
 1. You will be navigated to the **Microsoft Fabric Home page**.
 
@@ -68,6 +82,14 @@ You will be able to complete the following tasks:
 1. You will see **Welcome to Microsoft Copilot Studio** page, choose the Country/region as **United States (1)** then click on **Get started (2)** button.
 
     ![quota-check-output](../Images/lab1-56.png)
+
+1. In the **Start building your agent** page, click on **Ellipsis (1)** then choose **X Cancel agent creation (2)** option from the dropdown list.
+
+    ![quota-check-output](../Images/jan2026-chat-fabric-11.png)
+
+1. In the **Cancel agent creation?** pop-up window, choose **Yes, continue**.
+
+    ![quota-check-output](../Images/jan2026-chat-fabric-12.png)
 
 1. In the Copilot studio page, you may see pop up window **We've updated you to the latest version of Microsoft Copilot Studio**, choose **Got it.**
 
@@ -258,6 +280,8 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
     > **Note:** If you see the option to Allow the copy to clipboard option, choose **Allow**.
 
+     ![](../Images/lab1-22.png)
+
 1. A new window **Enter code to allow access** will open in the browser, provide the code copied in the previous step and choose **Next**.
 
       ![The `New Repository` creation form in GitHub.](../Images/lab1-29.png "New Repository Creation Form")
@@ -266,12 +290,12 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
       ![The `New Repository` creation form in GitHub.](../Images/lab1-30.png "New Repository Creation Form")
 
-    > **Note:** If you are not logged into azure yet or using private window, use the following credentials to login in.
+    > **Note:** If you are not logged into azure yet or using private window, choose **Use another account** and use the following credentials to login in.
     - You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
 
         - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-            ![](../Images/signin.png)
+            ![](../Images/jan2026-chat-fabric-5.png)
 
         - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
@@ -304,7 +328,7 @@ In this task, you will authenticate to GitHub and complete device verification, 
 1. You will see two options to choose the programming language for the backend API, as **Enter a value for the 'backendRuntimeStack' infrastructure parameter:**, choose **dotnet** and press **Enter**.
 
     - **python**
-    - **dotnet(.NET )**
+    - **dotnet**
 
  1. For the **Enter a value for the 'usecase' infrastructure parameter**, you will see two options as below, choose **Retail-sales-analysis** option for now and press **Enter**.
 
@@ -328,7 +352,6 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
 1. Once the deployment has completed successfully:
 
-    - Copy the **Web app URL (1)** and keep it in notepad for future reference
     - Copy the **two bash commands (2)** from the terminal (ex. 
    `bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh` and
    `bash ./infra/scripts/fabric_sripts/run_fabric_items_scripts.sh <fabric-workspaceId>`) for later use.
@@ -375,10 +398,20 @@ In this task, you will authenticate to GitHub and complete device verification, 
     bash ./infra/scripts/fabric_scripts/run_fabric_items_scripts.sh <fabric-workspaceId>
     ```
 
-1. Once the script has run successfully, go to the deployed resource group, find the App Service, and get the app URL from `Default domain`.
+1. Upon successful execution of the script, the resulting output will appear as shown below.
 
-    ![](../Images/lab1-33.png)
+    ![](../Images/jan2026-chat-fabric-6.png)
 
+
+1. If you want to switch the **backendRuntimeStack** (for example, from **Python to .NET or vice versa**), or switch the previously used **use case** (from **Retail-sales-analysis to Insurance-improve-customer-meetings or vice versa**), you must first run the two cleanup commands. After cleanup, repeat the steps starting from Task 3, Step 21.
+
+    ```Shell
+    azd down
+    ```
+
+    ```Shell
+    rm -rf .azure
+    ```
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
@@ -395,7 +428,7 @@ In this task, you will enable authentication for the Azure App Service by adding
 
     ![](../Images/lab1-43.png)
 
-1. You will see two app services in running state. Select the app service without **cs** in the name of it.
+1. You will see two app services in running state. Select the app service named **app-xxxxxxx**.
 
     ![](../Images/lab1-42.png)
 
@@ -405,7 +438,7 @@ In this task, you will enable authentication for the Azure App Service by adding
 
 3. Click on `Identity Provider` dropdown to see a list of identity providers. Select the first option `Microsoft (1)` from the drop-down list.
 
-4. Keep **App registration type** as **Create new app registration (2)**. Provide the name of App registration as  **fabric-app (3)**. In `client secret expiration` under **App registration** choose **Recommended 180 days (4)**. Accept the default values and click on **Add (5)** button to go back to the previous page with the identity provider added.
+4. Keep **App registration type** as **Create new app registration (2)**. Provide the name of App registration as  **fabric-app-<inject key="DeploymentID" enableCopy="false"/> (3)**. In `client secret expiration` under **App registration** choose **Recommended 180 days (4)**. Accept the default values and click on **Add (5)** button to go back to the previous page with the identity provider added.
 
     ![](../Images/lab1-40.png)
 
