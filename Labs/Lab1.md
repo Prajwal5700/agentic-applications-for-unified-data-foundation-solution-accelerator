@@ -402,7 +402,6 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
     ![](../Images/jan2026-chat-fabric-6.png)
 
-
 1. If you want to switch the **backendRuntimeStack** (for example, from **Python to .NET or vice versa**), or switch the previously used **use case** (from **Retail-sales-analysis to Insurance-improve-customer-meetings or vice versa**), you must first run the two cleanup commands. After cleanup, repeat the steps starting from Task 3, Step 21.
 
     ```Shell
