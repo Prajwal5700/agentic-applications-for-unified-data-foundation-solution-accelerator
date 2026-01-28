@@ -4,21 +4,20 @@
 
 ## Overview
 
-In this lab, you will provision a Microsoft Fabric capacity, configure tenant-level settings required for Copilot and data agents, and create a Fabric workspace linked to a Copilot-enabled capacity. You will then deploy the required Azure infrastructure using Bicep templates and Azure Developer CLI (azd), set up application authentication in Azure App Service, and validate the end-to-end solution by interacting with the deployed application to query and visualize data using natural language.
+In this lab, you will create a Fabric workspace linked to a Copilot-enabled capacity. You will then deploy the required Azure infrastructure using Bicep templates and Azure Developer CLI (azd), set up application authentication in Azure App Service, and validate the end-to-end solution by interacting with the deployed application to query and visualize data using natural language.
 
 ## Lab Objectives
 
 You will be able to complete the following tasks:
 
-- Task 1: Create a fabric capacity
-- Task 2: Create a fabric workspace and link with Fabric Copilot-enabled capacity
-- Task 3: Deploy Azure infrastructure via the provided Bicep templates
-- Task 4: Set Up Authentication in Azure App Service
-- Task 5: Testing the application
+- Task 1: Create a fabric workspace and link with Fabric Copilot-enabled capacity
+- Task 2: Deploy Azure infrastructure via the provided Bicep templates
+- Task 3: Set Up Authentication in Azure App Service
+- Task 4: Testing the application
 
-## Pre-requisite
+## Task 1: Create a workspace and link with Fabric Copilot-enabled capacity
 
-## Activating fabric tenant
+In this task, you will create a new workspace in Microsoft Fabric to organize and manage your data and analytics assets. The workspace will be linked to a Copilot-enabled capacity, providing access to AI-powered features such as natural language queries and intelligent data insights.
 
 1. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar:
 
@@ -46,20 +45,6 @@ You will be able to complete the following tasks:
 
     ![](../Images/jan2026-chat-fabric-1.png)
 
-1. In the **Create your account** option, provide the following details and choose **Get Started (4)**:
-
-    | Setting | Value |
-    | --- | --- |
-    | Country or Region | **United States (1)**  |
-    | Job title | **Cloud Consultant (2)** |
-    | Business phone number | **1234567890 (3)** |
-
-    ![](../Images/jan2026-chat-fabric-2.png)
-
-1. In the **Confirmation detailst** option, choose **Get Started (4)**.
-
-    ![](../Images/jan2026-chat-fabric-3.png)
-
 1. On **Welcome to the Fabric view** dialog opens, click **Cancel**.
 
     ![](../Images/lab1-92.png)
@@ -71,115 +56,6 @@ You will be able to complete the following tasks:
    >**Note:** If you receive any pop-ups, please **Close** them.
 
    ![tour](../Images/lab1-94.png)
-
-## Activating Microsoft Copilot Studio
-
-1. In a new tab, navigate to **Microsoft Copilot Studio** by copying and pasting the following URL into the address bar:
-
-   ```
-   https://copilotstudio.microsoft.com/
-   ```
-1. You will see **Welcome to Microsoft Copilot Studio** page, choose the Country/region as **United States (1)** then click on **Get started (2)** button.
-
-    ![quota-check-output](../Images/lab1-56.png)
-
-1. In the **Start building your agent** page, click on **Ellipsis (1)** then choose **X Cancel agent creation (2)** option from the dropdown list.
-
-    ![quota-check-output](../Images/jan2026-chat-fabric-11.png)
-
-1. In the **Cancel agent creation?** pop-up window, choose **Yes, continue**.
-
-    ![quota-check-output](../Images/jan2026-chat-fabric-12.png)
-
-1. In the Copilot studio page, you may see pop up window **We've updated you to the latest version of Microsoft Copilot Studio**, choose **Got it.**
-
-    ![quota-check-output](../Images/lab2-6.png)
-
-    > **Note:** If you see the pop up **What's new in Copilot Studio** choose **Got it.**
-
-    ![quota-check-output](../Images/lab2-7.png)
-
-## Task 1: Create a fabric capacity
-
-In this task, you will provision a Microsoft Fabric capacity by configuring the required Azure settings and assigning a Fabric administrator.
-
-
-1. Navigate to the Azure portal tab. In the search bar, type **Microsoft Fabric (1)** and select the **Microsoft Fabric (2)** option from the services.
-
-    ![](../Images/lab1-110.png)
-
-1. On **Microsoft Fabric** blade, click **+ Create**.
-
-    ![](../Images/lab1-111.png)
-
-1. In the **Create Fabric capacity** page, under **Basics** tab provide the below details and select **Review + create (9)**:
-
-    | Setting | Value |
-    | --- | --- |
-    | Subscription | **Keep it as default (1)**  |
-    | Resource Group | **Fabric (2)** |
-    | Capacity name | **capacity<inject key="DeploymentID" enableCopy="false"/>(3)** |
-    | Region | **Keep it as default (4)** |
-    | Size | Select **Change size (5)** |
-    | Select the resource size | Select **F2 (6)** sku and choose **Select (7)** |    
-    | Fabric capacity administrator | Choose **<inject key="AzureAdUserEmail"></inject> (8)** |
-
-     ![](../Images/lab1-112.png)
-
-1. Wait for the validation process to complete. Then click on **Create**.
-
-    >**Note**: Wait for the Fabric capacity to be created. This should take about 1-2 minutes.
-
-     ![](../Images/lab1-114.png)
-
-1. On the deployment blade, click **Go to resource** to display the Fabric capacity blade.
-
-    ![](../Images/lab1-113.png)
-
-1. Verify that the status of fabric capacity is in **Active** state.
-
-    ![](../Images/lab1-115.png)
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task.
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="207abae5-efc7-4a67-9e86-0a14078227ae" />
-
-## Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
-
-In this task, you will create a new workspace in Microsoft Fabric to organize and manage your data and analytics assets. The workspace will be linked to a Copilot-enabled capacity, providing access to AI-powered features such as natural language queries and intelligent data insights.
-
-1. Navigate back to the **Microsoft Fabric Home page**.
-
-    ![tour](../Images/lab1-93.png)
-
-1. Select the **gear icon (1)** in the top-right corner, then choose the **Admin Portal (2)**. 
-
-    ![](../Images/lab1-102.png)
-
-1. If you got the pop up window, **Organize your tenant with domains** and **Tag your data**, choose **Got it (1)**
-
-    ![](../Images/lab1-103.png)
-
-    ![](../Images/lab1-104.png)
-
-1. In the **Admin Portal**, select **Tenant settings** from the left-hand navigation pane. 
-
-    ![](../Images/lab1-109.png)
-
-1. For the **Users can use Copilot and other features powered by Azure OpenAI (1)** setting, ensure it is , **Enabled (2)** if it is not enabled and choose **Apply (3)**.
-
-    ![](../Images/lab1-105.png)
-
-1. For the **Data sent to Azure OpenAI can be processed outside your capacity's geographic region, compliance boundary, or national cloud instance (1)** setting, ensure it is , **Enabled (2)** if it is not enabled and choose **Apply (3)**.
-
-    ![](../Images/lab1-106.png)
-
-1. For the **Users can create and share Data agent item types (preview) (1)** setting, ensure it is , **Enabled (2)** if it is not enabled and choose **Apply (3)**.
-
-    ![](../Images/lab1-107.png)
 
 1. Now, let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
 
@@ -210,7 +86,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 1. Copy the **Workspace ID** from the link and keep it in notepad for future reference.
 
-## Task 3: Deploy Azure infrastructure via the provided Bicep templates
+## Task 2: Deploy Azure infrastructure via the provided Bicep templates
 
 In this task, you will authenticate to GitHub and complete device verification, then use GitHub Codespaces and Azure Developer CLI (azd) to deploy the solution’s Azure infrastructure. You will sign in to Azure, run azd up to provision resources, and execute post-deployment scripts to configure agents and Fabric components.
 
@@ -419,7 +295,7 @@ In this task, you will authenticate to GitHub and complete device verification, 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="5d64b6bb-4a04-4b87-b94f-faa5389bad0e" />
 
-## Task 4: Set Up Authentication in Azure App Service
+## Task 3: Set Up Authentication in Azure App Service
 
 In this task, you will enable authentication for the Azure App Service by adding Microsoft as an identity provider, creating a new app registration, and validating secure user sign-in through the app’s default domain.
 
@@ -457,7 +333,7 @@ In this task, you will enable authentication for the Azure App Service by adding
 
      - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-## Task 5: Testing the application
+## Task 4: Testing the application
 
 In this task, you will validate the deployed application by submitting natural language queries and reviewing the generated visualizations. Using sample prompts, you will test the app’s ability to retrieve data, perform analysis, and display results through charts and tables.
 
@@ -481,7 +357,6 @@ These questions serve as a great starting point to explore insights from the dat
 
 In this lab, you have completed:
 
-- Created a fabric capacity
 - Created a fabric workspace and link with Fabric Copilot-enabled capacity
 - Deployed Azure infrastructure via the provided Bicep templates
 - Set Up Authentication in Azure App Service

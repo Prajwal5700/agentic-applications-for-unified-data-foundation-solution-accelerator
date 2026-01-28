@@ -59,7 +59,30 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 
 In this task, you will create a custom AI agent in Microsoft Copilot Studio, connect it to an existing Fabric data agent, and configure its behavior and orchestration settings. You will then publish the agent and make it available in Microsoft Teams to answer business questions using data from Microsoft Fabric.
 
-1. Navigate back to Microsoft Copilot studio page.
+1. In a new tab, navigate to **Microsoft Copilot Studio** by copying and pasting the following URL into the address bar:
+
+   ```
+   https://copilotstudio.microsoft.com/
+   ```
+1. You will see **Welcome to Microsoft Copilot Studio** page, choose the Country/region as **United States (1)** then click on **Get started (2)** button.
+
+    ![quota-check-output](../Images/lab1-56.png)
+
+1. In the **Start building your agent** page, click on **Ellipsis (1)** then choose **X Cancel agent creation (2)** option from the dropdown list.
+
+    ![quota-check-output](../Images/jan2026-chat-fabric-11.png)
+
+1. In the **Cancel agent creation?** pop-up window, choose **Yes, continue**.
+
+    ![quota-check-output](../Images/jan2026-chat-fabric-12.png)
+
+1. In the Copilot studio page, you may see pop up window **We've updated you to the latest version of Microsoft Copilot Studio**, choose **Got it.**
+
+    ![quota-check-output](../Images/lab2-6.png)
+
+    > **Note:** If you see the pop up **What's new in Copilot Studio** choose **Got it.**
+
+    ![quota-check-output](../Images/lab2-7.png)
 
 1. On the left pane, select **Agents (1)**, then select **+ Create blank agent (2)** to start building your custom AI agent.
 
