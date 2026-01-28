@@ -13,13 +13,6 @@ You will be able to complete the following tasks:
 - Task 1: Create and Configure a Microsoft Fabric Data Agent
 - Task 2: Implement and Validate an End-to-End Copilot Agent with Fabric Data Agent Integration
 
-## Pre-requisites
-- A [paid F2 or higher Fabric capacity](https://learn.microsoft.com/en-us/fabric/enterprise/fabric-features#features-parity-list)  , or a [Power BI Premium per capacity (P1 or higher)](https://learn.microsoft.com/en-us/fabric/enterprise/licenses#workspace) capacity with Microsoft Fabric enabled
-- [Fabric data agent tenant settings](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-tenant-settings) is enabled.
-- [Copilot tenant switch](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-tenant-settings) is enabled.
-- [Cross-geo processing for AI](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-tenant-settings) is enabled.
-- [Cross-geo storing for AI](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-tenant-settings) is enabled.
-
 
 ## Task 1: Create and Configure a Microsoft Fabric Data Agent
 

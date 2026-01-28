@@ -41,10 +41,6 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
     ![](../Images/lab1-3.png)
 
-1. In the **You've selected Microsoft Fabric free** page, under **Let's get you started** option, choose **Sign In**.
-
-    ![](../Images/jan2026-chat-fabric-1.png)
-
 1. On **Welcome to the Fabric view** dialog opens, click **Cancel**.
 
     ![](../Images/lab1-92.png)
