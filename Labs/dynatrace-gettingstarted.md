@@ -1,4 +1,4 @@
-# Dynatrace and Azure Workshops
+# Intelligent Observability for Microsoft Azure: Hands-On Workshop
 
 ## Overall Estimated Duration: 4 Hours
 
@@ -10,7 +10,7 @@ Welcome to your Chat with your data Fabric Workshop. Let's begin by making the m
 
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-![](../Images/getting-started-4.png)
+![](../Images/dyna-getting-started-1.png)
 
 
 ## Lab Guide Zoom In/Zoom Out
@@ -27,7 +27,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![](../Images/env.png)
+![](../Images/dyna-getting-started-4.png)
 
 ## Utilizing the Split Window Feature
 
@@ -39,7 +39,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-![](../Images/res.png)
+![](../Images/dyna-getting-started-2.png)
 
 ## Let's Get Started with Azure Portal
 
@@ -67,29 +67,7 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
 
    ![Stay Signed in](../Images/03.png)   
 
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.  
-
-## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
-
-1. At the **"More information required"** prompt, select **Next**.
-
-1. On the **"Keep your account secure"** page, select **Next** twice.
-
-1. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
-
-   - Open **Google Play Store** (Android) or **App Store** (iOS).
-   - Search for **Microsoft Authenticator** and tap **Install**.
-   - Open the **Microsoft Authenticator** app, select **Add account**, then choose **Work or school account**.
-
-1. A **QR code** will be displayed on your computer screen.
-
-1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
-
-1. After scanning, click **Next** to proceed.
-
-1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next**.
-       
-1. If prompted to stay signed in, you can click **Yes**.
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
  
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
@@ -104,7 +82,7 @@ Learner Support Contacts:
 
 Click **Next** from the bottom right corner to embark on your Lab journey!
 
-![](../Images/nextpage.png)
+![](../Images/dyna-getting-started-3.png)
 
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
