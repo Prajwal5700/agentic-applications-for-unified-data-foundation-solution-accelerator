@@ -47,7 +47,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 1. You will be navigated to the **Microsoft Fabric Home page**.
 
-   ![tour](../Images/lab1-93.png)
+   ![tour](../Images/jan26-lab1-1.png)
 
    >**Note:** If you receive any pop-ups, please **Close** them.
 
@@ -55,7 +55,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 1. Now, let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
 
-     ![](../Images/lab1-96.png)
+     ![](../Images/jan26-lab1-2.png)
 
 1. The **Create a workspace** dialog opens on the right side of the browser.
 

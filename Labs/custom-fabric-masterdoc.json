@@ -1,0 +1,17 @@
+[ {
+  "Name": "Chat with your data [Fabric]",
+  "Language": "English",
+  "Files": [
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5700/agentic-applications-for-unified-data-foundation-solution-accelerator/refs/heads/prod/Labs/custom-fabric-gettingstarted.md",
+        "Order": 1
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/tbecks/FabConRTITutorial/refs/heads/main/docs/workshop.md",
+        "Order": 2
+     }
+  ]
+} 
+
+
+]
