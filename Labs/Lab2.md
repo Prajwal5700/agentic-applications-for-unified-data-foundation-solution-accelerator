@@ -61,18 +61,6 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/lab1-56.png)
 
-1. In the **Start building your agent** page, click on **Ellipsis (1)** then choose **X Cancel agent creation (2)** option from the dropdown list.
-
-    ![quota-check-output](../Images/jan2026-chat-fabric-11.png)
-
-1. In the **Cancel agent creation?** pop-up window, choose **Yes, continue**.
-
-    ![quota-check-output](../Images/jan2026-chat-fabric-12.png)
-
-1. In the Copilot studio page, you may see pop up window **We've updated you to the latest version of Microsoft Copilot Studio**, choose **Got it.**
-
-    ![quota-check-output](../Images/lab2-6.png)
-
     > **Note:** If you see the pop up **What's new in Copilot Studio** choose **Got it.**
 
     ![quota-check-output](../Images/lab2-7.png)
@@ -94,7 +82,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/jan2026-chat-fabric-14.png)
 
-1. You will see the prompt in the screen, **Setting up your copilot may take a while**, wait for sometime till your agent gets created.
+1. You may see the prompt in the screen, **Setting up your copilot may take a while**, wait for sometime till your agent gets created.
 
     ![quota-check-output](../Images/lab2-11.png)
 

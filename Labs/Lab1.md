@@ -65,9 +65,9 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
      ![](../Images/lab1-5.png)
 
-1. Ensure **Fabric capacity (1)** is chosen, verify that **capacity<inject key="DeploymentID" enableCopy="false"/>(2)** is selected under **Capacity**, and then click **Apply (3)**.
+1. Ensure **Fabric (1)** is chosen, verify that **capacity<inject key="DeploymentID" enableCopy="false"/>(2)** is selected under **Details**, and then click **Apply (3)**.
 
-     ![](../Images/lab1-6.png)
+     ![](../Images/march-update-lab1-3.png)
 
     >**Note:** Close any pop-up that appears on the screen.
 
@@ -205,7 +205,7 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
 1. You will see the subscription available for you, **type 1** choose **Enter** to select the default subscription.
 
-1. Now, you will see the list of locations, use the up/down arrow button to navigate to **Australia East** as location, press **Enter** to select it.
+1. Now, you will see the list of locations, use the up/down arrow button to navigate to **East US 2** as location, press **Enter** to select it.
 
 1. You will see two options to choose the programming language for the backend API, as **Enter a value for the 'backendRuntimeStack' infrastructure parameter:**, choose **dotnet** and press **Enter**.
 
@@ -219,7 +219,7 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
 1. Now, you will see the option to choose the Resource group or create it, keep the cursor at **1. Create a new resource group** and press **Enter**.
 
-1. Use the up/down arrow button to navigate to **Australia East** as location, press **Enter** to select it.
+1. Use the up/down arrow button to navigate to **East US 2** as location, press **Enter** to select it.
 
 1. You will see the prompt **Enter a name for the new resource group**, provide **rg-fabricapp** as suggested and press **Enter**
 
@@ -230,7 +230,12 @@ In this task, you will authenticate to GitHub and complete device verification, 
     ![](../Images/lab1-26.png)
 
     > **Note:** If you encounter an error or timeout during deployment, changing the location may help, as there could be availability constraints for the resources.
-    Here are some example regions where the services are available: **East US, East US2, Australia East, UK South, France Central.**
+    Execute the command below to clear the saved session data, then try using any of the other regions listed below. Here are some example regions where the services are available: **East US2, Australia East, UK South, France Central.**
+
+    ```Shell
+    rm -rf .azure
+    ```
+    
 
 1. Once the deployment has completed successfully:
 

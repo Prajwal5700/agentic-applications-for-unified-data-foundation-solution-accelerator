@@ -43,7 +43,7 @@ Welcome to your Chat with your data Fabric Workshop. Let's begin by making the m
 
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-![](../Images/getting-started-4.png)
+![](../Images/march-update-lab1-1.png)
 
 
 ## Lab Guide Zoom In/Zoom Out
@@ -60,7 +60,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![](../Images/env.png)
+![](../Images/march-update-lab1-2.png)
 
 ## Utilizing the Split Window Feature
 
