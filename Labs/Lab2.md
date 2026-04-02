@@ -13,9 +13,6 @@ You will be able to complete the following tasks:
 - Task 1: Create and Configure a Microsoft Fabric Data Agent
 - Task 2: Implement and Validate an End-to-End Copilot Agent with Fabric Data Agent Integration
 
-> [!IMPORTANT]
-> Kindly use your personal system to complete the lab for the time being, as not all features are currently available in the Copilot Studio web application on the virtual machine.
-
 ## Task 1: Create and Configure a Microsoft Fabric Data Agent
 
 In this task, you will create and publish a Microsoft Fabric Data Agent within an existing Fabric workspace. You will connect the agent to a Lakehouse data source, select the required tables, add a descriptive prompt, and publish the agent so it can answer natural language questions based on the connected data.
