@@ -98,9 +98,11 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
-   ![Stay Signed in](../Images/03.png)   
+   ![Stay Signed in](../Images/03.png)
 
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.  
+1. If the **Welcome to Microsoft Teams!** window appears, close it to proceed.
+
+   ![Stay Signed in](../Images/march-update-lab1-13.png)
 
 ## Support Contact
 

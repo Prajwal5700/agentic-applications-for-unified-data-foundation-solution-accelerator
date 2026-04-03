@@ -68,11 +68,13 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/lab2-8.png)
 
-1. On the Agents pane, choose **Edit (1)** to proceed with creating custom agent.
+1. Enter the name of your agent as **Adventure Work Sales Agent (1)** and choose **Create (2)**. Wait for the Agent to finish setting up, then from the **Details** section, click on **Edit**.
 
-    ![quota-check-output](../Images/jan2026-chat-fabric-13.png)
+    ![quota-check-output](../Images/april-update-lab1-1.png)
 
-1. Configure your agent by giving the name and description provided below that describes its purpose and role then choose **Save (3)**.
+    ![quota-check-output](../Images/april-update-lab1-2.png)
+
+1. Configure your agent by verifying the name and description provided below that describes its purpose and role then choose **Save (3)**.
 
     | Setting | Value |
     | --- | --- |
