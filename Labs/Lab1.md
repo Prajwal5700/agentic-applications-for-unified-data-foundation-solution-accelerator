@@ -274,7 +274,7 @@ In this task, you will authenticate to GitHub and complete device verification, 
 
     ![](../Images/lab1-31.png)
 
-1. Run the bash script from the output of the azd deployment. Replace the **fabric-workspaceId** with your Fabric workspace Id created in the **Task 2 Step 13**. The script will look like the following:
+1. Run the bash script from the output of the azd deployment. Replace the **fabric-workspaceId** with your Fabric workspace Id created in the **Task 1 Step 13**. The script will look like the following:
 
     ```Shell
     bash ./infra/scripts/fabric_scripts/run_fabric_items_scripts.sh <fabric-workspaceId>
