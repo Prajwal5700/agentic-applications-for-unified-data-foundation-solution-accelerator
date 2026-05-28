@@ -2,17 +2,17 @@
 
 ## Estimated Duration: 120 Minutes
 
-## 🎯 Scenario Overview
+## 🎯 Lab Scenario
 
 Contoso Retail wants to modernize its data platform by building a **unified and governed analytics foundation using Microsoft Fabric**. The organization needs to consolidate customer, product, and sales data from multiple systems to enable efficient data processing, reporting, and business analysis.
 
 In this hands-on lab, you will work with **Microsoft Fabric** components to explore and manage unified enterprise data, process data through lakehouse architecture layers, and enable analytical reporting for business users and sales analysts.
 
-## Overview
+## 📖 Lab Overview
 
 In this lab, you will design a **Microsoft Fabric Data Agent** connected to a **Lakehouse** to support natural language queries on structured data. You will also create a custom AI agent in **Microsoft Copilot Studio**, connect it to the Fabric data agent, configure authentication and orchestration options, and publish the agent to **Microsoft Teams** so users can ask business questions and receive data-driven answers.
 
-## Lab Objectives
+## 🎯 Lab Objectives
 
 You will be able to complete the following tasks:
 

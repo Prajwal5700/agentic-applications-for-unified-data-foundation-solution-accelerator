@@ -2,17 +2,17 @@
 
 ## Estimated Duration: 120 Minutes
 
-## 🎯 Scenario Overview
+## 🎯 Lab Scenario 
 
 Contoso Retail wants to simplify how users explore and analyze enterprise sales data spread across multiple systems. To address this challenge, the organization is implementing the **Agentic Applications for Unified Data Foundation Solution Accelerator using Microsoft Fabric and AI-powered agents**.
 
 In this hands-on lab, you will work with **Microsoft Fabric, AI agents, and orchestration services** to build a unified analytics solution that enables users to interact with business data using natural language queries and explore customer, product, and transaction insights.
 
-## Overview
+## 📖 Lab Overview
 
 In this lab, you will create a **Fabric workspace** linked to a copilot-enabled capacity. You will then deploy the required Azure infrastructure using **Bicep templates** and **Azure Developer CLI (azd)**, set up application authentication in Azure App Service, and validate the end-to-end solution by interacting with the deployed application to query and visualize data using natural language.
 
-## Lab Objectives
+## 🎯 Lab Objectives
 
 You will be able to complete the following tasks:
 

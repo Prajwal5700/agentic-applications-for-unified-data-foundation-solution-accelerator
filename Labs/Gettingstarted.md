@@ -3,7 +3,7 @@
 ## Overall Estimated Duration: 4 Hours
 
 
-## 🎯 Lab Scenario
+## 🎯 Workshop Scenario
 
 **Contoso Retail** is experiencing challenges in analyzing customer and sales performance data spread across multiple disconnected systems. **Sales analysts**, currently spend significant time collecting, consolidating, and validating data before meaningful insights can be generated.
 
