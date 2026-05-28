@@ -2,44 +2,53 @@
 
 ## Estimated Duration: 120 Minutes
 
+## 🎯 Scenario Overview
+
+Contoso Retail wants to modernize its data platform by building a **unified and governed analytics foundation using Microsoft Fabric**. The organization needs to consolidate customer, product, and sales data from multiple systems to enable efficient data processing, reporting, and business analysis.
+
+In this hands-on lab, you will work with **Microsoft Fabric** components to explore and manage unified enterprise data, process data through lakehouse architecture layers, and enable analytical reporting for business users and sales analysts.
+
 ## Overview
 
-In this lab, you will design a Microsoft Fabric Data Agent connected to a Lakehouse to support natural language queries on structured data. You will also create a custom AI agent in Microsoft Copilot Studio, connect it to the Fabric data agent, configure authentication and orchestration options, and publish the agent to Microsoft Teams so users can ask business questions and receive data-driven answers.
+In this lab, you will design a **Microsoft Fabric Data Agent** connected to a **Lakehouse** to support natural language queries on structured data. You will also create a custom AI agent in **Microsoft Copilot Studio**, connect it to the Fabric data agent, configure authentication and orchestration options, and publish the agent to **Microsoft Teams** so users can ask business questions and receive data-driven answers.
 
 ## Lab Objectives
 
 You will be able to complete the following tasks:
 
-- Task 1: Create and Configure a Microsoft Fabric Data Agent
-- Task 2: Implement and Validate an End-to-End Copilot Agent with Fabric Data Agent Integration
+- **Task 1**: Create and Configure a Microsoft Fabric Data Agent
+- **Task 2**: Implement and Validate an End-to-End Copilot Agent with Fabric Data Agent Integration
 
 ## Task 1: Create and Configure a Microsoft Fabric Data Agent
 
 In this task, you will create and publish a Microsoft Fabric Data Agent within an existing Fabric workspace. You will connect the agent to a Lakehouse data source, select the required tables, add a descriptive prompt, and publish the agent so it can answer natural language questions based on the connected data.
 
-1. To create a new Fabric data agent, first navigate to **fabric<inject key="DeploymentID" enableCopy="false"/> (1)** workspace created in previous lab, and then select the **+ New Item (2)** button. In the **All items** tab, search for **data agent (3)** to locate the appropriate option, then choose **Data agent (4)**
+1. Navigate back to **Microsoft Fabric** portal.
+
+1. To create a new Fabric data agent, first navigate to **fabric<inject key="DeploymentID" enableCopy="false"/> (1)** workspace created in previous lab, and then click on **+ New Item (2)** button. In the **All items** tab, search for **data agent (3)** to locate the appropriate option, then click on **Data agent (4)**
 
     ![quota-check-output](../Images/march-update-lab1-5.png)
 
-1. Provide **fabric-agent** name for your Fabric data agent and click on **Create** button.
+1. On the **Create data agent** wizard, provide **fabric-agent (1)** as the name for your **Fabric data agent** and click on **Create (2)** button.
 
     ![quota-check-output](../Images/lab1-49.png)
 
-1. Click on **+ Add data (1)** then choose **Data Source (2)** from the dropdown list 
+1. Click on **+ Add data (1)** from **Explorer**, then select **Data Source (2)** from the dropdown list 
 
     ![quota-check-output](../Images/cwd1.png)
     
-1. Select the **retail_lakehouse_xxxxxxx Lakehouse (1)**, then choose **Add (2)**  and select the relevant tables, for now we will select **all tables (3)**.
-
+1. Select the **retail_lakehouse_xxxxxxx (1)** of **Lakehouse** type, then click on **Add (2)**. 
     ![quota-check-output](../Images/lab2-1.png)
+
+1. On the **Data Agent > Explorer** pane, for now we will select **all tables (3)**.
 
     ![quota-check-output](../Images/cwd13.png)
 
-1. Click on `Publish` from the toolbar to publish the data agent.
+1. Click on **Publish** from the toolbar to publish the data agent.
 
     ![quota-check-output](../Images/jan2026-chat-fabric-9.png)
 
-1. Add the **Description (1)** of agent, then click on **Publish (2)** from the **Publish data agent** window:
+1. On the **Publish data agent** popup wizard, add the **Description (1)** of agent and then click on **Publish (2)**:
 
     ``` 
     You are an intelligent data agent designed to help users navigate and understand a structured database schema related to customer and order management. This database comprises multiple tables, each containing specific information about customers, their accounts, orders, products, and payments.
@@ -47,19 +56,31 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 
     ![quota-check-output](../Images/jan2026-chat-fabric-10.png)
 
-1. You can now start interacting with the agent by asking questions. For example: **Provide me the total number of customers.**
+1. Once the **Data Agent** is published successfully. You can now start interacting with the agent by asking questions. 
 
-    ![quota-check-output](../Images/cwd10.png)
+    ![quota-check-output](../Images/L2T1S9.png)
 
-1. Try one more prompt to validate the agent. For example: **Provide me the total number of orders in the last 6 months by region.**
+1. Here are the few example prompts that you can try giving to the **Data Agent**.
 
-    ![quota-check-output](../Images/cwd11.png)
+    ```
+    Provide me the total number of customers.
+    ```
+
+    ![quota-check-output](../Images/L2T1S10.png)
+
+1. Try one more prompt to validate the agent response.
+
+    ```
+    Provide me the total number of orders in the last 6 months by region.
+    ```
+
+    ![quota-check-output](../Images/L2T1S11.png)
 
 ## Task 2: Implement and Validate an End-to-End Copilot Agent with Fabric Data Agent Integration
 
 In this task, you will create a custom AI agent in Microsoft Copilot Studio, connect it to an existing Fabric data agent, and configure its behavior and orchestration settings. You will then publish the agent and make it available in Microsoft Teams to answer business questions using data from Microsoft Fabric.
 
-1. In a new tab, navigate to **Microsoft Copilot Studio** by copying and pasting the following URL into the address bar:
+1. In a new tab, navigate to **Microsoft Copilot Studio** by copy-pasting the following URL into the address bar:
 
    ```
    https://copilotstudio.microsoft.com/
@@ -72,27 +93,26 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/lab2-7.png)
 
-1. On **Select a team** page, select the **default team (1)** available from the drop-down, and click on **Continue (2)**
+1. On the left pane, select **Agents (1)**, then click on **+ Create blank agent (2)** to start building your custom AI agent.
 
-    ![quota-check-output](../Images/cwd5.png)
-    
-1. On the left pane, select **Agents (1)**, then select **+ Create blank agent (2)** to start building your custom AI agent.
+    ![quota-check-output](../Images/L2T2S3.png)
 
-    ![quota-check-output](../Images/lab2-8.png)
+1. On the **Name your Agent** popup wizard, Enter the name of your agent as **Adventure Work Sales Agent (1)**  and click on **Create (2)**.
+
+    ![quota-check-output](../Images/L2T2S4.png)
 
 1. Wait for the Agent to finish setting up, then from the **Details** section, click on **Edit**.
 
-    ![quota-check-output](../Images/cwd6.png)
+    ![quota-check-output](../Images/L2T2S5.png)
 
-1. Configure your agent by entering the name and description provided below to define its purpose and model, then click **Save (4)**
+1. Configure your agent by entering the name and description provided below to define its purpose and model, then click **Save (3)**
 
     | Setting | Value |
     | --- | --- |
-    | Name  | **Adventure Work Sales Agent (1)** |
-    | Description | **Adventure Work Sales Agent is a custom agent built in Microsoft Copilot Studio and is designed to answer business questions about customers and product sales (2)** |
-    | Select your agent's model | **GPT-5 Chat (3)** |
+    | Description | **Adventure Work Sales Agent is a custom agent built in Microsoft Copilot Studio and is designed to answer business questions about customers and product sales (1)** |
+    | Select your agent's model | **GPT-5 Chat (2)** |
 
-    ![quota-check-output](../Images/march-update-lab1-9.png)
+    ![quota-check-output](../Images/LT2S6.png)
 
 1. You may see the prompt in the screen, **Setting up your copilot may take a while**, wait for sometime till your agent gets created.
 
@@ -158,7 +178,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
 1. To make the custom AI agent available, select **Publish (1)** from the top-right corner. When the **Publish this agent** dialog appears, confirm by selecting **Publish (2)**.
 
-    ![quota-check-output](../Images/lab2-21.png)
+    ![quota-check-output](../Images/LT2S22.png)
 
 1. Next, go to **Channels (1)** and choose the appropriate consumption channel. To publish the agent to Teams, select **Microsoft 365 Copilot and Microsoft Teams (2)** from the available channel options.
 
@@ -188,7 +208,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
 1. You will see the **Adventure Work Sales Agent** pop-up window. Wait for the Add button to appear, then select **Add**.
 
-    ![quota-check-output](../Images/lab2-36.png)
+    ![quota-check-output](../Images/LT2S29.png)
 
     > **Note:** Wait a few moments for the Add agent page to appear. If it doesn’t load, navigate back to the Copilot page and select See agent in Teams again to open the agent in Microsoft Teams.
 
@@ -196,7 +216,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
 1. You will see a confirmation that the agent has been added successfully. In the new pop-up window, select **Open** to continue.
 
-    ![quota-check-output](../Images/lab2-37.png)
+    ![quota-check-output](../Images/LT2S30.png)
 
 1. This will launch Microsoft Teams, where you can interact with the custom AI agent by asking questions and receiving responses.
 
