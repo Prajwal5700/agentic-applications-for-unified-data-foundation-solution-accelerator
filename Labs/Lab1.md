@@ -92,10 +92,6 @@ In this task, you will create a workspace in **Microsoft Fabric**, to organize a
 
 In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces and Azure Developer CLI (azd)** to deploy the solution’s Azure infrastructure. You will sign in to Azure, run `azd up` which automates the end-to-end deployment of an application to Azure, and execute post-deployment scripts to configure agents and Fabric components.
 
-1. Navigate to the **Environment (1)** tab in the lab environment and click on the **Licenses (2)** button. Copy the **GitHub UserName (3)** and **GitHub Password (4)**, then save these credentials in **Notepad**. You will need them later during the GitHub login and device verification steps.
-
-     ![](../Images/getting-started-5.png)
-
 1. Open a **Private window** in Microsoft Edge by clicking the three-dot menu **(1)** in the top-right and selecting **New InPrivate window (2)**.
 
     ![](../Images/lab1-97.png)
