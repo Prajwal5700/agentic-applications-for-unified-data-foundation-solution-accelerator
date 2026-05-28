@@ -269,7 +269,6 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
 1. Upon successful execution of the script, the resulting output will appear as shown below. Now that the command is executed successfully, it configures and deploys the required **Microsoft Fabric** resources by creating Fabric items, generating SQL connection details, and updating the App Service configuration with the Fabric database settings required for the solution.
 
-
     ![](../Images/jan2026-chat-fabric-6.png)
 
 1. If you want to switch the **backendRuntimeStack** (for example, from **Python to .NET or vice versa**), or switch the previously used **use case** (from **Retail-sales-analysis to Insurance-improve-customer-meetings or vice versa**), you must first run the two cleanup commands. After cleanup, repeat the steps starting from Task 3, Step 21.
