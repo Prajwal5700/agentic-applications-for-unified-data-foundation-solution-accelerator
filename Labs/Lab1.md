@@ -137,7 +137,7 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
 1. Accept the default values on the **Create a new Codespaces** page, click on **Create codespace**.
 
-      ![The `New Repository` creation form in GitHub.](../Images/lab1-14.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](../Images/chat-with-data-fabric-SSO.png "New Repository Creation Form")
 
 1. Wait for the **Codespace** wizard to be setup, it would ideally take 2-5 minutes for codespace to get ready.
 
