@@ -116,13 +116,13 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
     * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)** 
 
-    ![](../Images/GSlogin.png)
+        ![](../Images/GSlogin.png)
 
 1. Next, provide your **Temporary Access Pass** and click on **Sign in (2)**
 
     * **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject> **(1)**
 
-    ![](../Images/GSpwd.png)
+        ![](../Images/GSpwd.png)
 
 1. If you see the pop-up **Stay Signed in?**, select **Yes**.
 
@@ -131,8 +131,9 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 1. Once after you have logged in successfully to **GitHub**. Now lets open the solution accelerator by copying the below link into new tab of edge browser and observe it will use the same **GitHub credentials** that is already signed in:
 
    ```
-   https://github.com/codespaces/new/CloudLabsAI-Azure/agentic-applications-for-unified-data-foundation-solution-accelerator
+   https://github.com/codespaces/new/Cloudlabs-Enterprises/agentic-applications-for-unified-data-foundation-solution-accelerator-XXXXX
    ```
+    > **Note:** Replace the XXXXX suffix in the URL with the **<inject key="DeploymentID" enableCopy="false"/>**.
 
 1. Accept the default values on the **Create a new Codespaces** page, click on **Create codespace**.
 
