@@ -128,16 +128,31 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
     ![](../Images/GSno.png)
 
-1. Once after you have logged in successfully to **GitHub**. Now lets open the solution accelerator by copying the below link into new tab of edge browser and observe it will use the same **GitHub credentials** that is already signed in:
+1. Navigate to the repository in a web browser.
 
    ```
-   https://github.com/codespaces/new/Cloudlabs-Enterprises/agentic-applications-for-unified-data-foundation-solution-accelerator-XXXXX
+   https://github.com/CloudLabsAI-Azure/agentic-applications-for-unified-data-foundation-solution-accelerator
    ```
-    > **Note:** Replace the XXXXX suffix in the URL with the **<inject key="DeploymentID" enableCopy="false"/>**.
 
-1. Accept the default values on the **Create a new Codespaces** page, click on **Create codespace**.
+1. Click on the green **Use this template** button.
 
-      ![The `New Repository` creation form in GitHub.](../Images/chat-with-data-fabric-SSO.png "New Repository Creation Form")
+   ![](../Images/chat-with-data-fabric-SSO-1.png)
+
+1. You should see a repository creation form. Make the following selections :
+
+   - **Owner:** Select **Cloudlabs-Enterprises (1)**
+
+   - **Repository name:** Enter the name **agentic-applications-for-unified-data-foundation-solution-accelerator-<inject key="DeploymentID" enableCopy="false"/> (2)**
+
+   - **Visibility:** Choose **Internal (3)**.
+   
+   - Scroll down and then click **Create repository (4)**.
+  
+     ![](../Images/chat-with-data-fabric-SSO-2.png)
+
+1. Once your repository has been successfully created, you will be redirected to its home page. From there, click **Code (1)**, navigate to the **Codespaces (2)** tab, and then select **Create codespace on main (3)** to launch your Codespace.
+
+   ![](../Images/chat-with-data-fabric-SSO-3.png)
 
 1. Wait for the **Codespace** wizard to be setup, it would ideally take 2-5 minutes for codespace to get ready.
 
