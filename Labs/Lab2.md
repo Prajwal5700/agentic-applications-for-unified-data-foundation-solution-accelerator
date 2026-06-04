@@ -60,7 +60,7 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 
     ![quota-check-output](../Images/L2T1S9.png)
 
-1. Here are the few example prompts that you can try giving to the **Data Agent**.
+1. Here are the few examples of prompts that you can try giving to the **Data Agent**.
 
     ```
     Provide me the total number of customers.
@@ -68,7 +68,7 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 
     ![quota-check-output](../Images/L2T1S10.png)
 
-1. Try one more prompt to validate the agent response.
+1. Try one more prompt to validate the agent's response.
 
     ```
     Provide me the total number of orders in the last 6 months by region.
@@ -114,7 +114,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/LT2S6.png)
 
-1. You may see the prompt in the screen, **Setting up your copilot may take a while**, wait for sometime till your agent gets created.
+1. You may see the prompt on the screen, **Setting up your copilot may take a while**, wait for sometime till your agent gets created.
 
 1. To add a Fabric data agent to your custom AI agent in Copilot Studio, choose **Adventure Work Sales Agent** created previously then navigate to **Agents (1)** from the top pane and then select **+ Add (2)** to add agents to your custom AI agent.
 
@@ -214,7 +214,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     > **Note:** If relaunching Teams still does not allow the agent to be added, open Copilot Studio in a private or incognito window and repeat the steps to add the agent in Teams. This should resolve the issue.
 
-1. You will see a confirmation that the agent has been added successfully. In the new pop-up window, select **Open** to continue.
+1. You will see confirmation that the agent has been added successfully. In the new pop-up window, select **Open** to continue.
 
     ![quota-check-output](../Images/LT2S30.png)
 

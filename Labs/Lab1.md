@@ -86,7 +86,7 @@ In this task, you will create a workspace in **Microsoft Fabric**, to organize a
 
      ![](../Images/lab1-8.png)
 
-1. Copy the **Workspace ID** from the link and keep it in notepad, as we will need it upcoming tasks to deploy the Azure infrstructure through Bicep templates.
+1. Copy the **Workspace ID** from the link and keep it in notepad, as we will need it upcoming tasks to deploy the Azure infrastructure through Bicep templates.
 
 ## Task 2: Deploy Azure infrastructure via the provided Bicep templates
 
@@ -203,7 +203,7 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
     ![](../Images/lab1-21.png)
 
-1. Execute the following command to provision the required Azure infrastructure and deploy the solution components to your Azure environment.The `azd up` command automates the deployment process by creating the necessary Azure resources, configuring services, and deploying the application components required for the solution accelerator.
+1. Execute the following command to provision the required Azure infrastructure and deploy the solution components to your Azure environment. The `azd up` command automates the deployment process by creating the necessary Azure resources, configuring services, and deploying the application components required for the solution accelerator.
 
     ```shell
     azd up
@@ -238,7 +238,7 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
       ![](../Images/lab1-28.png)
 
-1. Run the bash script from the output of the azd deployment.The script will look like the following:
+1. Run the bash script from the output of the azd deployment. The script will look like the following:
 
     ```Shell
     bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh
@@ -248,14 +248,12 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
     ![The `New Repository` creation form in GitHub.](../Images/lab1-101.png "New Repository Creation Form")
 
-    >**Note:** Also you can provide the below link into the new browser tab if you are having any issues in accessing the URL.
+    >**Note:** Also you can provide the link below into the new browser tab if you are having any issues in accessing the URL.
 
     ```Shell
     https://microsoft.com/devicelogin
     ```
 1. A new window **Enter code to allow access** will open in the browser, provide the code copied in the previous step and choose **Next**.
-
-    
 
      ![The `New Repository` creation form in GitHub.](../Images/lab1-29.png "New Repository Creation Form")
 
@@ -308,7 +306,7 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
 In this task, you will enable authentication for the Azure App Service by adding Microsoft as an identity provider, creating a new app registration, and validating secure user sign-in through the app’s default domain.
 
-1. Now lets navigate to the **Azure Portal**. Search for **App services** in azure portal and select it.
+1. Now let's navigate to the **Azure Portal**. Search for **App services** in azure portal and select it.
 
     ![](../Images/lab1-43.png)
 
